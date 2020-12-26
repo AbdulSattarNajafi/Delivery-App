@@ -1,0 +1,85 @@
+#atob{
+  @include main-padding;
+  .next-delivery{
+    margin: .4rem auto;
+    padding-bottom: 0;
+    .client-name{
+      @include flex;
+      .client-numb{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $danger-color;
+        h4{
+          color: $white-color;
+          font-weight: bold;
+        }
+      }
+    }
+    .client-address{
+      @include flex;
+      align-items: flex-end;
+      svg{
+        fill: $muted-denim;
+      }
+    }
+    .red-footer{
+      background-color: $danger-color;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      h4{
+        font-weight: bold;
+        color: $white-color;
+      }
+    }
+  }
+  /*Arrow-up*/
+  .arrow-up{
+    width: 40px;
+    height: 40px;
+    margin: .5rem auto;
+    text-align: center;
+    svg{
+      fill: $denim-color;
+      width: 40px;
+      height: 40px;
+    }
+  }
+/*Delivered Card*/
+  .delivered{
+    margin: .4rem auto;
+    padding-bottom: 0;
+    .client-name{
+      @include flex;
+      .client-numb{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $success-color;
+        h4{
+          color: $white-color;
+          font-weight: bold;
+        }
+      }
+    }
+    .client-address{
+      @include flex;
+      align-items: flex-end;
+      svg{
+        fill: $muted-denim;
+      }
+    }
+    .green-footer{
+      background-color: $success-color;
+      @include flex;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      color: $white-color;
+      h4{
+        font-weight: bold;
+      }
+    }
+  }
+}

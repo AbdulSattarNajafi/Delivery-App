@@ -1,0 +1,85 @@
+
+.midsize-btn{
+  border: none;
+  background-color: $bg-color;
+  border-radius: 30px;
+  box-shadow: $box-shadow;
+  @include flex;
+  padding: .8rem 2rem;
+  width: 100%;
+  font-weight: bold;
+  p{
+    color: $violet-color;
+    svg{
+      fill: $violet-color;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.lgsize-btn{
+  border: none;
+  background-color: $bg-color;
+  border-radius: 30px;
+  box-shadow: $box-shadow;
+  @include flex;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $violet-color;
+  &:focus{
+    outline: none;
+  }
+}
+.outl-btn{
+  background: $bg-color;
+  outline: none;
+  border: none;
+  border: 1.5px solid $muted-denim;
+  border-radius: 6px;
+  padding: .6rem 2rem;
+  font-size: .875rem;
+  font-weight: 600;
+  color: $muted-denim;
+  transition: all .4s;
+  &:focus{
+    outline: none;
+  }
+}
+.circle-btn{
+  outline: none;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $muted-denim;
+  color: $white-color;
+  &:focus{
+    outline: none;
+  }
+}
+.select-btn{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: $violet-color;
+  font-weight: bold;
+  &:focus{
+    outline: none;
+  }
+}
+.left-arrow-btn{
+  border: 1.5px solid $denim-color;
+  border-radius: 6px;
+  padding: .4rem .7rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $denim-color;
+  &:hover{
+    color: $denim-color;
+  }
+}

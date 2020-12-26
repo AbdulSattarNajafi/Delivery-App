@@ -1,0 +1,156 @@
+#allorders{
+  @include main-padding;
+  .res-btn{
+    button{
+      float: right;
+      width: 129px;
+      color: $danger-color;
+      padding: .8rem 1.4rem;
+    }
+  }
+  .delivered{
+    margin-top: 1.4rem;
+    padding-bottom: 0;
+    .client-name{
+      @include flex;
+      .client-numb{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $success-color;
+        h4{
+          color: $white-color;
+          font-weight: bold;
+        }
+      }
+    }
+    .client-address{
+      @include flex;
+      align-items: flex-end;
+      svg{
+        fill: $muted-denim;
+      }
+    }
+    .card-link{
+      a{
+        text-decoration: none;
+        color: $denim-color;
+        p{
+          @include vertical-align;
+          justify-content: center;
+          svg{
+            width: 20px;
+            height: 20px;
+            fill: $denim-color;
+          }
+        }
+      }
+    }
+    .green-footer{
+      background-color: $success-color;
+      @include flex;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      color: $white-color;
+      h4{
+        font-weight: bold;
+      }
+    }
+  }
+  /*Cancelled Delivery Card*/
+  .cancelled-delivery{
+    margin-top: 1.4rem;
+    padding-bottom: 0;
+    .client-name{
+      @include flex;
+      .cancel-container{
+        @include flex;
+        .client-numb{
+          margin-left: 1rem;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: $secondary-color;
+          h4{
+            color: $white-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .client-address{
+      @include flex;
+      align-items: flex-end;
+      svg{
+        fill: $muted-denim;
+      }
+    }
+    .card-link{
+      a{
+        text-decoration: none;
+        color: $denim-color;
+        p{
+          @include vertical-align;
+          justify-content: center;
+          svg{
+            width: 20px;
+            height: 20px;
+            fill: $denim-color;
+          }
+        }
+      }
+    }
+    .gray-footer{
+      background-color: $secondary-color;
+      @include flex;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      color: $white-color;
+      h4{
+        font-weight: bold;
+      }
+    }
+  }
+  /*Next Delivery*/
+  .next-delivery{
+    margin-top: 1.4rem;
+    padding-bottom: 0;
+    .client-name{
+      @include flex;
+      .cancel-container{
+        @include flex;
+        .client-numb{
+          margin-left: 1rem;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: $danger-color;
+          h4{
+            color: $white-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .client-address{
+      @include flex;
+      align-items: flex-end;
+      svg{
+        fill: $muted-denim;
+      }
+    }
+    .red-footer{
+      background-color: $danger-color;
+      @include flex;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      color: $white-color;
+      h4{
+        font-weight: bold;
+      }
+    }
+  }
+}

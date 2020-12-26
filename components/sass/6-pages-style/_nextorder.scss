@@ -1,0 +1,197 @@
+#nextorder{
+  @include main-padding;
+  .delivery-container{
+    margin-top: 1.2rem;
+    @include flex;
+    .delivery-box{
+      @include flex;
+      .delivery-icon{
+        @include flex;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background-color: $denim-color;
+        border-radius: 50%;
+        margin-right: .5rem;
+      }
+    }
+    .delivery-link h5{
+      color: $violet-color;
+    }
+  }
+  /*Collect Money card*/
+  .collect-money{
+    margin: 1rem auto;
+    padding-bottom: 0;
+    .client-name{
+      @include flex;
+      .client-numb{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $success-color;
+        h4{
+          color: $white-color;
+          font-weight: bold;
+        }
+      }
+    }
+    .client-address{
+      @include flex;
+      .client-icons{
+        svg{
+          fill: $muted-denim;
+        }
+      }
+    }
+    .card-links{
+      @include flex;
+      margin-top: 1.2rem;
+      margin-bottom: .2rem;
+      p{
+        color: $denim-color;
+        @include vertical-align;
+        svg{
+          fill: $denim-color;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .card-footer{
+      @include flex;
+      background-color: $success-color;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      color: $white-color;
+      h4{
+        font-weight: bold;
+      }
+    }
+  }
+  /*Pagination*/
+  .pagination{
+    @include flex;
+    width: 86%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: .4rem;
+    .pagi-links{
+      @include flex;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $denim-color;
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all .4s; 
+      a{
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: $muted-denim;
+        transition: all .4s;
+      }
+      .pag-icon{
+        color: $denim-color;
+      }
+      &:hover{
+        background-color: $denim-color;
+        a{
+          color: $white-color;
+        }
+      }
+    }
+    .active{
+      background-color: $denim-color;
+      a{
+        color: $white-color;
+      }
+    }
+  }
+}
+/*Modal*/
+.qr-modal{
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  @include vertical-align;
+  display: none;
+  z-index: 333;
+  .modal-card{
+    padding-bottom: 0;
+    margin: 1.4rem auto;
+    box-shadow: none;
+    .card-body{
+      .client-ad{
+        @include flex;
+        svg{
+          fill: $muted-denim;
+        }
+      }
+      .qr-container{
+        width: 236px;
+        margin: 0 auto;
+        .qr-code{
+          background-color: $white-color;
+          width: 100%;
+          height: 236px;
+          padding: .79rem;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+          border-radius: 14px;
+        }
+        .qr-btns{
+          @include flex;
+          .outl-btn:hover, .active{
+            border-color: $denim-color;
+            color: $denim-color;
+          }
+        }
+        .semibold{
+          @include vertical-align;
+          justify-content: center;
+          margin: 1.2rem 0 .4rem 0;
+          font-size: 1rem;
+          color: $denim-color;
+          svg{
+            width: 26px;
+            height: 26px;
+            fill: $denim-color;
+          }
+        }
+      }
+    }
+    .card-footer{
+      background-color: $success-color;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 $border-radious $border-radious;
+      @include flex;
+      color: $white-color;
+      h4{
+        font-weight: bold;
+      }
+    }
+  }
+  .modal-btn{
+    @include flex;
+    justify-content: center;
+    #close-modal{
+      outline: none;
+      border: none;
+      height: 64px;
+      width: 64px;
+      background-color: $bg-color;
+      border-radius: 50%;
+      font-size: 20px;
+    }
+  }
+}

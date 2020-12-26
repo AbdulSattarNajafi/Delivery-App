@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  font-size: .875rem;
+  font-family: 'open sans', sans-serif;
+  font-weight: 400;
+  font-weight: light;
+  color: $denim-color;
+}
+a{
+  text-decoration: none;
+}
+.blur-text{
+  color: $muted-denim;
+}
+.hr-line{
+  margin: 0;
+  border: none;
+  border-top: 1.2px solid gray;
+}
+.card{
+  background: $bg-color;
+  border: none;
+  border-radius: $border-radious;
+  box-shadow: $box-shadow;
+  padding: .5rem .1rem;
+}
+
+.red-text{
+  color: $danger-color;
+}

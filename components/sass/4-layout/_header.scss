@@ -1,0 +1,61 @@
+#head{
+  background-color: $bg-color;
+  width: 100%;
+  position: relative;
+  .header{
+    @include header;
+    .driver-profile{
+      @include vertical-align;
+      height: 68px;
+      .driver-img{
+        width: 64px;
+        height: 64px;
+        border: 2px solid $danger-color;
+        border-radius: 50%;
+      }
+      .driver-name{
+        margin-left: 1rem;
+        height: 51px;
+      }
+    }
+    .menu-btn{
+      outline: none;
+      border: none;
+      border: 1.5px solid $denim-color;
+      background-color: $bg-color;
+      border-radius: 4px;
+      padding: 1px 3px;
+      cursor: pointer;
+      svg{
+        width: 28px;
+        height: 30px;
+        fill: $denim-color;
+      }
+    }
+  }
+  .menu{
+    padding-top: 2rem;
+    background-color: $bg-color;
+    position: fixed;
+    right: 0;
+    top: 139px;
+    transform: translate(100%);
+    z-index: 88;
+    transition: all .7s ease-out;
+    .menu-item{
+      margin-bottom: 1.4rem;
+      .card-body{
+        svg{
+          width: 40px;
+          height: 40px;
+          margin-bottom: .5rem;
+          fill: $denim-color;
+        }
+      }
+    }
+  }
+  .show-menu{
+    transform: translate(0%);
+    
+  }
+}

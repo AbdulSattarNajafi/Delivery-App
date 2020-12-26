@@ -1,0 +1,23 @@
+@import './1-helpers/variables';
+@import './1-helpers/mixin';
+
+@import './2-tools/buttons';
+
+@import './3-basics/typegraphy';
+@import './3-basics/global';
+
+@import './4-layout/header';
+@import './4-layout/footer';
+
+@import './5-modules/notifi';
+
+@import './6-pages-style/home';
+@import './6-pages-style/qr';
+@import './6-pages-style/atob';
+@import './6-pages-style/nextorder';
+@import './6-pages-style/allorders';
+@import './6-pages-style/transferorder';
+@import './6-pages-style/receipt-detail';
+@import './6-pages-style/history-order';
+@import './6-pages-style/view-map';
+@import './6-pages-style/notification';

@@ -1,0 +1,143 @@
+#transfer-order{
+  @include main-padding;
+  .instruction{
+    background-color: $white-color;
+    padding: 1.2rem 1rem;
+    border: 1px dashed $denim-color;
+    border-radius: $border-radious;
+  }
+  .transfer-title{
+    margin: 1.4rem auto;
+  }
+  /*Transfer cards*/
+  .card-bg{
+    background-color: $bg-color;
+    .transfer-card{
+      padding-bottom: 0;
+      .client-name{
+        @include flex;
+        .client-numb{
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: $danger-color;
+          h4{
+            color: $white-color;
+            font-weight: bold;
+          }
+        }
+      }
+      .client-address{
+        @include flex;
+        align-items: flex-end;
+        svg{
+          fill: $muted-denim;
+        }
+      }
+      .card-footer{
+        padding: .7rem;
+        text-align: center;
+        background-color: $bg-color;
+        border-radius: 0 0 $border-radious $border-radious;
+        display: block;
+      }
+      .hide-footer{
+        display: none;
+      }
+    }
+    .hide-card{
+      display: none;
+    }
+    .close-card-bg{
+      display: block;
+      padding: 0;
+      width: 42px;
+      margin: auto;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      svg{
+        width: 30px;
+        height: 30px;
+        fill: $muted-denim;
+      }
+      display: none;/*JS*/
+    }
+   .card-bg-container{
+     overflow-y: hidden;
+      /*Cards bacground*/
+    border-radius: $border-radious $border-radious 0 0;
+    h3{
+      margin: 1.4rem auto;
+    }
+    .drivers{
+      @include flex;
+      .driver-profile{
+        margin-bottom: 1rem;
+        @include vertical-align;
+        height: 68px;
+        .driver-img{
+          width: 64px;
+          height: 64px;
+          border: 2px solid $danger-color;
+          border-radius: 50%;
+        }
+        .driver-name{
+          margin-left: .7rem;
+          .driver-numb{
+            font-size: 12px;
+          }
+        }
+      }
+      .check-btn{
+        outline: none;
+        border: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $muted-denim;
+        color: $white-color;
+      }
+      .active-check{
+        background-color: $violet-color;
+      }
+    }
+    .lgsize-btn{
+      margin: 1rem 0;
+      justify-content: center;
+    }
+    .cancel-btn-container{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      .select-btn{
+        padding: .5rem;
+        color: $muted-denim;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+   }
+  }
+  .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 22;
+  }
+  .show-overlay{
+    display: block;
+  }
+  .show-card-bg{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    z-index: 122;
+  }
+}

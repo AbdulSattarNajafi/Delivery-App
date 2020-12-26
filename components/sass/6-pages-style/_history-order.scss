@@ -1,0 +1,64 @@
+#history-order{
+  @include main-padding;
+  .delivery-time{
+    background-color: $white-color;
+    border: 1px dashed $denim-color;
+    border-radius: $border-radious;
+    padding: 1.4rem 1rem;
+    @include vertical-align;
+    .delivery-icon{
+      width: 48px;
+      height: 48px;
+      background-color: $denim-color;
+      border-radius: 50%;
+      @include flex;
+      justify-content: center;
+    }
+    .delivery-text{
+      margin-left: 1rem;
+      p{
+        font-size: 12px;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  /*total Route*/
+  .route-title{
+    margin-top: 1.4rem;
+    @include flex;
+    .semi-small{
+      color: $violet-color;
+    }
+  }
+  .history-card{
+    margin-top: 1.4rem;
+    .card-title{
+      @include flex;
+      padding-bottom: .8rem;
+      .title-desc{
+        display: flex;
+        p{
+          margin-right: .8rem;
+        }
+      }
+      .card-numb{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $violet-color;
+        @include flex;
+        justify-content: center;
+        color: $white-color;
+      }
+    }
+    .card-map{
+      @include flex;
+      padding-top: .8rem;
+      .button .midsize-btn{
+        color: $violet-color;
+      }
+    }
+  }
+}

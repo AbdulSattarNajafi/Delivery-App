@@ -1,0 +1,40 @@
+@font-face{
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+  font-family: 'Open Sans', sans-serif;
+  font-style: noraml;
+}
+p{
+  margin-bottom: 0;
+}
+.semibold{
+  font-weight: 600;
+}
+.semi-small{
+  font-size: .875rem;
+}
+.small-font{
+  font-size: .75rem;
+}
+.h4-bold{
+  font-weight: bold;
+}
+h2{
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: 'open sans', sans-serif;
+}
+h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'open sans', sans-serif;
+}
+h4{
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'open sans', sans-serif;
+}
+h5{
+  font-size: .8rem;
+  font-weight: 800;
+  font-family: 'open sans', sans-serif;
+}

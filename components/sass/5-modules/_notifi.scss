@@ -1,0 +1,19 @@
+#notifi{
+  margin: 1.4rem auto;
+  .notifi-container{
+    @include flex;
+    justify-content: center;
+    .notifica{
+      width: 64px;
+      height: 64px;
+      @include flex;
+      justify-content: center;
+      background-color: $bg-color;
+      border-radius: 50%;
+      box-shadow: $box-shadow;
+      &:first-child{
+        margin-right: 1rem;
+      }
+    }
+  }
+}

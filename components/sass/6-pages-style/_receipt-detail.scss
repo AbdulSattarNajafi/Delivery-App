@@ -1,0 +1,49 @@
+#receipt-detail{
+  @include main-padding;
+  .title-container{
+    @include vertical-align;
+    .icon-container{
+      width: 100%;
+      @include flex;
+      justify-content: center;
+      .receipt-icon{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $denim-color;
+        margin-right: .5rem;
+        @include flex;
+        justify-content: center;
+      }
+    }
+  }
+  .card{
+    margin: 1.4rem auto;
+    .card-body{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  /*Order Details*/
+  .orders{
+    margin-top: .8rem;
+    .list-title{
+      @include flex;
+      margin: .5rem auto;
+      p{
+        @include vertical-align;
+      }
+    }
+    .order-list{
+      list-style: none;
+      margin-top: 1rem;
+      li{
+        font-size: 14px;
+      }
+    }
+  }
+  /*Button*/
+  .button-container .red{
+    color: $danger-color;
+  }
+}

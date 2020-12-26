@@ -1,0 +1,34 @@
+@mixin header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 138px;
+}
+@mixin vertical-align {
+  display: flex;
+  align-items: center;
+}
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin main-padding {
+  padding-top: 1.4rem;
+}
+@mixin input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .8rem 1rem;
+  font-size: 1rem;
+  background-color: $bg-color;
+  color: $denim-color;
+  border-radius: 30px;
+  box-shadow: $inset-shadow;
+  margin-bottom: 1.4rem;
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,47 @@
+footer{
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: $denim-color;
+  padding: 1rem;
+  z-index: 10;
+  .footer-container{
+    @include flex;
+    .footer-item{
+      width: 18%;
+      height: 56px;
+      @include flex;
+      justify-content: center;
+      background-color: $denim-color;
+      border-radius: 8px;
+      transition: all .7s ease;
+      svg{
+        display: block;
+        width: 32px;
+        height: 32px;
+        fill: $white-color;
+        &:last-child, &:nth-child(3) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &:hover{
+        background-color: $white-color;
+        box-shadow: -1px 0px 15px -2px rgba(0,0,0,0.42);
+        svg{
+          fill: $denim-color;
+        }
+      }
+    }
+    .active{
+      background-color: $white-color;
+      box-shadow: -1px 0px 15px -2px rgba(0,0,0,0.42);
+      svg{
+        fill: $denim-color;
+      }
+    }
+  }
+}
+
