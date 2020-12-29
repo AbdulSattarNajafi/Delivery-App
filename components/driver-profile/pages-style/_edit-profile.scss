@@ -1,0 +1,91 @@
+#header{
+  @include blue-header;
+}
+/*Main Form*/
+#main-form{
+  @include main-padding;
+  #profile-form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    label{
+      margin-bottom: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    input{
+      @include input;
+    }
+    #image{
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    #label-image{
+      position: absolute;
+      top: 12px;
+      left: 20px;
+      font-size: 1.6rem;
+      color: $white-color;
+      cursor: pointer;
+      z-index: 22;
+    }
+    #upload-image{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      opacity: 0;
+      z-index: -2;
+    }
+    .first-last-name{
+      width: 100%;
+      @include flex;
+      .first-name, .last-name{
+        width: 48%;
+        label{
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+        input{
+          @include input;
+        }
+      }
+    }
+    .national-insurance{
+      padding-top: .8rem;
+      overflow-y: hidden;
+      height: auto;
+      transition: all .7s ease-out;
+      .text-container{
+        @include flex;
+        margin-bottom: 1.4rem;
+        .btn-arrow-up{
+          border: none;
+          outline: none;
+          background: transparent;
+          color: $denim-color;
+          font-size: 1rem;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+    .show-national-insurance{
+      height: 60px;
+      transition: all .7s ease-in;
+    }
+    .lgsize-btn{
+      justify-content: center;
+    }
+  }
+ 
+}

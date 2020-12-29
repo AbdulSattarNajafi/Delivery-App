@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="./../../../assets/bootstrap/css/bootstrap.min.css">
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="./../../../assets/fontawesome/css/all.css">
+  <!--Owl-Carousel-->
+  <link rel="stylesheet" href="./../../../assets/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./../../../assets/owl-carousel/owl.theme.default.min.css">
+  <!--Custom CSS file-->
+  <link rel="stylesheet" href="./../scss/app.css">
+  <title>Earnings</title>
+</head>
+<body>
+  <!--Header-->
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 header-link">
+          <a href="./../driver-profile.html"><h3>
+            <i class="fas fa-arrow-left"></i>
+          </h3></i></a>
+          <h3>Earnings</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--===================
+  Start Of Main Form
+=====================-->
+<main id="earning">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="buttons-container">
+          <button type="button" id="weekly" class="weekly-btn active">
+            Weekly
+          </button>
+          <button type="button" id="daily" class="daily-btn">
+            Daily
+          </button>
+        </div>
+      </div>
+<!--==================================
+  Weekly Earning
+====================================-->
+      <div class="col-12 weekly-earning">
+        <h4 class="semibold text-center mt-1" id="show-date">(16th Nov - 22nd Nov)</h4>
+        <p class="small-font semibold blur-text">WEEK</p>
+        <div class="weeks-btns owl-carousel">
+          <div class="btns-container">
+            <button type="button" class="circle-btn" data-id="40">40</button>
+          </div>
+          <div class="btns-container">
+            <button type="button" class="circle-btn" data-id="41">41</button>
+          </div>
+          <div class="btns-container">
+            <button type="button" class="circle-btn" data-id="42">42</button>
+          </div>
+          <div class="btns-container">
+            <button type="button" class="circle-btn" data-id="43">43</button>
+          </div>
+          <div class="btns-container">
+            <button type="button" class="circle-btn" data-id="44">44</button>
+          </div>
+          <div class="btns-container">
+            <button type="button" class="circle-btn" data-id="45">45</button>
+          </div>
+          <div class="btns-container">
+            <button type="button" class="circle-btn active" data-id="46">46</button>
+          </div>
+        </div>
+        <!--Earning Description-->
+        <div class="earning-desc">
+          <div class="desc-title">
+            <p class="semi-small h4-bold blur-text">DESCRIPTION</p>
+            <p class="semi-small h4-bold blur-text">AMOUTN</p>
+          </div>
+          <div class="dash-line"></div>
+          <div class="earning-amounts">
+            <p class="payments">
+              <span>Basic Pay (40 hrs)</span>
+              <span class="semibold">£400</span>
+            </p>
+            <p class="payments">
+              <span>Bonus</span>
+              <span class="semibold green">£100</span>
+            </p>
+            <p class="payments">
+              <span>Less:  Insurance</span>
+              <span class="semibold red">-£80</span>
+            </p>
+            <p class="payments">
+              <span>Deduction</span>
+              <span class="semibold red">-£70</span>
+            </p>
+          <div class="dash-line"></div>
+          </div>
+          <div class="total">
+            <p class="semibold">Net. Earnings</p>
+            <h3 class="h4-bold violet">£400</h3>
+          </div>
+        </div>
+        <!--End Of Earning Description-->
+      </div>
+<!--===============================
+  Daily Earnings
+=================================-->
+      <div class="col-12 daily-earning">
+        <h4 class="semibold text-center mt-1" id="show-date">October 2020</h4>
+        <!--Dates-->
+        <div class="dates-container owl-carousel">
+          <div>
+            <div class="days"><p class="small-font">F</p></div>
+            <div class="date"><p class="semi-small"></p>25</div>
+          </div>
+          <div>
+            <div class="days"><p class="small-font">S</p></div>
+            <div class="date"><p class="semi-small"></p>26</div>
+          </div>
+          <div>
+            <div class="days"><p class="small-font">S</p></div>
+            <div class="date"><p class="semi-small"></p>27</div>
+          </div>
+          <div>
+            <div class="days"><p class="small-font">M</p></div>
+            <div class="date active-date"><p class="semi-small"></p>28</div>
+          </div>
+          <div>
+            <div class="days"><p class="small-font">T</p></div>
+            <div class="date"><p class="semi-small"></p>29</div>
+          </div>
+          <div>
+            <div class="days"><p class="small-font">W</p></div>
+            <div class="date"><p class="semi-small"></p>30</div>
+          </div>
+          <div>
+            <div class="days"><p class="small-font">T</p></div>
+            <div class="date"><p class="semi-small"></p>31</div>
+          </div>
+        </div>
+        <!--Daily Earning Descriptions-->
+        <div class="daily-desc">
+          <div class="daily-header">
+            <p>Period</p>
+            <p class="semibold">(11:00-15:00) DT2</p>
+          </div>
+          <div class="daily-header">
+            <p>Hours Worked</p>
+            <p class="semibold">4 hrs</p>
+          </div>
+          <div class="dash-line"></div>
+          <div class="total-earned">
+            <p class="semibold">Earnings</p>
+            <h3 class="h4-bold violet">£35</h3>
+          </div>
+          <p class="blur-text mb-3">* There may be deductions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--===================
+  Start Of Main Form
+=====================-->
+<!--JS File-->
+<script src="./../../../assets/jQuery/jquery.js"></script>
+<script src="./../../../assets/owl-carousel/owl.carousel.js"></script>
+<script src="./../../../assets/owl-carousel/owl.carousel.min.js"></script>
+<script src="./../js/earning.js"></script>
+</body>
+</html>

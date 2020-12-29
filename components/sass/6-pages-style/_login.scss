@@ -1,0 +1,149 @@
+#main-login{
+  width: 100%;
+  height: 100vh;
+  @include vertical-align;
+  .animation-container{
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+    .outline{
+      width: 175px;
+      height: 175px;
+      border: 1px solid $white-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: bounce3 2s ease-in-out infinite;
+      .midline{
+        width: 150px;
+        height: 150px;
+        border: 2px solid $white-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: bounce2 2s ease-in-out infinite;
+        .logo-container{
+          width: 130px;
+          height: 130px;
+          background-color: $violet-color;
+          border: 4px solid $white-color;
+          border-radius: 50%;
+          @include vertical-align;
+          flex-direction: column;
+          justify-content: center;
+          h2{
+            color: $white-color;
+          }
+          h3{
+            color: $white-color;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .time-container{
+      width: 170px;
+      height: 80px;
+      border-radius: $border-radious;
+      box-shadow: $box-shadow;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1{
+        font-size: 3rem;
+        font-weight: 300;
+        color: $success-color;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 0 #148432, 2px -2px 0 #148432, -2px 2px 0 #148432, -2px -2px 0 #148432, 2px 0px 0 #148432, 0px 2px 0 #148432, -2px 0px 0 #148432, 0px -2px 0 #148432;
+
+      }
+    }
+  }
+  /*Login Form*/
+  .login-form-container{
+    margin-top: 1rem;
+    #login-form{
+      display: flex;
+      flex-direction: column;
+      .driver-options{
+        position: relative;
+        #drivers{
+          @include input;
+          padding: .5rem 1rem;
+          padding-left: 1.8rem;
+          margin-bottom: 1rem;
+          color:$secondary-color;
+        }
+        .portrait-icon{
+          position: absolute;
+          top: 13px;
+          left: 13px;
+          color: $secondary-color;
+        }
+      }
+      .password-container{
+        position: relative;
+        #password{
+          @include input;
+          padding: .5rem 1rem;
+          padding-left: 1.8rem;
+          margin-bottom: 1rem;
+          color: $secondary-color;
+          text-indent: 3px;
+        }
+        .lock-icon{
+          position: absolute;
+          top: 13px;
+          left: 13px;
+          color: $secondary-color;
+        }
+      }
+      .midsize-btn{
+        justify-content: center;
+      }
+    }
+  }
+}
+/*Animation*/
+@keyframes bounce3 {
+  0% {
+    transform: scale(.85);
+    opacity: .94;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(.85);
+    opacity: .94;
+  }
+}
+@keyframes bounce2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*================*/
+@media (min-width:340px) {
+  #main-login .login-form-container #login-form .driver-options{
+    margin-top: 1.4rem;
+    #drivers{
+      margin-bottom: 1.4rem;
+    }
+  }
+  #main-login .login-form-container #login-form .password-container #password{
+    margin-bottom: 1.4rem;
+  }
+}

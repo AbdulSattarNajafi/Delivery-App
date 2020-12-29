@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="./../../../assets/bootstrap/css/bootstrap.min.css">
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="./../../../assets/fontawesome/css/all.css">
+  <!--Custom CSS file-->
+  <link rel="stylesheet" href="./../scss/app.css">
+  <title>Edit Profile</title>
+</head>
+<body>
+  <!--Header-->
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 links-container">
+          <div class="header-link">
+            <a href="./shift-order.html"><h3>
+              <i class="fas fa-arrow-left"></i>
+            </h3></i></a>
+            <h3>Rota</h3>
+          </div>
+          <div class="problem">
+            <button type="button">
+              <i class="fas fa-exclamation-triangle"></i> 
+              Problem
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--===================
+  Start Of Main Form
+=====================-->
+<main id="rota">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="week-shift">
+          <div class="calender-icon">
+            <i class="far fa-calendar"></i>
+          </div>
+          <div>
+            <p class="semi-small h4-bold blur-text">NEXT WEEK’S SHIFT</p>
+            <p class="mt-1">Week 47: 23rd Nov - 29th Nov</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <!--Order-1-->
+        <div class="card order-card">
+          <div class="card-body">
+            <p class="semibold mb-2">Monday, 23rd Nov, 2020</p>
+            <p class="semi-small blur-text mb-1">Period: DT3 - 2hrs</p>
+            <p class="semi-small blur-text mb-3">Schedule: 05:00 PM - 07:00 PM</p>
+            <div class="buttons-container">
+              <button type="button" class="midsize-btn decline" onclick="openDecline()">
+                Decline
+              </button>
+              <button type="button" class="midsize-btn accept">
+                Accept
+              </button>
+            </div>
+            <div class="reschedule-btn-container">
+              <button type="button" class="rescdeule-btn" onclick="openReschedule()">
+                <i class="fas fa-calendar-day"></i>&nbsp; 
+                Choose Different Hours
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Order-2-->
+        <div class="card order-card">
+          <div class="card-body">
+            <p class="semibold mb-2">Tuesday, 24th Nov, 2020</p>
+            <p class="semi-small blur-text mb-1">Period: DT3 - 2hrs</p>
+            <p class="semi-small blur-text mb-3">Schedule: 01:00 PM - 08:00 PM</p>
+            <div class="buttons-container">
+              <button type="button" class="midsize-btn decline" onclick="openDecline()">
+                Decline
+              </button>
+              <button type="button" class="midsize-btn accept">
+                Accept
+              </button>
+            </div>
+            <div class="reschedule-btn-container">
+              <button type="button" class="rescdeule-btn" onclick="openReschedule()">
+                <i class="fas fa-calendar-day"></i>&nbsp; 
+                Choose Different Hours
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--===================
+  Start Of Main Form
+=====================-->
+<!--===================
+  Start Of Decline
+=====================-->
+<section id="decline">
+  <div class="dark-layer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card decline-card">
+            <div class="card-body">
+              <div class="decline-header mb-1">
+                <h3 class="h4-bold">Reason for declining</h3>
+                <button type="button" id="close-decline" onclick="closeDecline()">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <p class="semi-small blur-text">Monday, 23rd Nov, 2020</p>
+              <p class="semi-small blur-text">Period: DT1 - 4hrs</p>
+              <p class="semi-small blur-text">Schedule: 07:00 AM - 11:00 AM</p>
+              <!--Decline-Form-->
+              <form action="#" id="decline-form">
+                <select name="reasons" id="reasons">
+                  <option value="0">Select a reason</option>
+                  <option value="Reason-1">Reason 1</option>
+                  <option value="Reason-2">Reason 2</option>
+                  <option value="Reason-3">Reason 3</option>
+                  <option value="Reason-4">Reason 4</option>
+                </select>
+                <textarea name="reson-detail" id="reason-detail" placeholder="Input detail reason here…"></textarea>
+                <button type="submit" class="midsize-btn" id="decline-btn">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--===================
+  End Of Decline
+=====================-->
+<!--===================
+  Start Of Reshedule
+=====================-->
+<section id="reschedule">
+  <div class="dark-layer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card reschedule-card">
+            <div class="card-body">
+              <div class="reschedule-header mb-1">
+                <h3 class="h4-bold">Choose different hours</h3>
+                <button type="button" id="close-reschedule" onclick="closeReschedule()">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <p class="semi-small blur-text">Monday, 23rd Nov, 2020</p>
+              <p class="semi-small blur-text">Period: DT1 - 4hrs</p>
+              <p class="semi-small blur-text">Schedule: 07:00 AM - 11:00 AM</p>
+              <!--Reschedule-Form-->
+              <form action="#" id="reschedule-form">
+                <p class="semibold">Period & Schedule</p>
+                <div class="periods-container">
+                  <select name="period" id="period">
+                    <option value="0">Period</option>
+                    <option value="Period-1">Period 1</option>
+                    <option value="Period-2">Period 2</option>
+                    <option value="Period-3">Period 3</option>
+                    <option value="Period-4">Period 4</option>
+                  </select>
+                  <select name="hours" id="hours">
+                    <option value="0">Hours</option>
+                    <option value="1-Hours">1 Hours</option>
+                    <option value="2-Hours">2 Hours</option>
+                    <option value="3-Hours">3 Hours</option>
+                    <option value="4-Hours">4 Hours</option>
+                  </select>
+                </div>
+                <div id="time-container">
+                  <input type="time" name="time" id="time" value="08:00">
+                  <input type="time" name="time" id="time" value="12:00">
+                </div>
+                <p class="semibold">Reason</p>
+                <select name="reasons" id="reasons">
+                  <option value="0">Select a reason</option>
+                  <option value="Reason-1">Reason 1</option>
+                  <option value="Reason-2">Reason 2</option>
+                  <option value="Reason-3">Reason 3</option>
+                  <option value="Reason-4">Reason 4</option>
+                </select>
+                <textarea name="reson-detail" id="reason-detail" placeholder="Input detail reason here…"></textarea>
+                <button type="submit" class="midsize-btn" id="reschedule-btn">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--===================
+  End Of Reschedule
+=====================-->
+<!--JS File-->
+<script src="./../js/rota.js"></script>
+</body>
+</html>

@@ -1,0 +1,1392 @@
+/*Colors*/
+/*Box*/
+.midsize-btn {
+  border: none;
+  background-color: #ECF0F3;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .8rem 2rem;
+  width: 100%;
+  font-weight: bold;
+  color: #655DB3;
+}
+
+.midsize-btn p {
+  color: #655DB3;
+}
+
+.midsize-btn p svg {
+  fill: #655DB3;
+  width: 24px;
+  height: 24px;
+}
+
+.midsize-btn:focus {
+  outline: none;
+}
+
+.lgsize-btn {
+  border: none;
+  background-color: #ECF0F3;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #655DB3;
+}
+
+.lgsize-btn:focus {
+  outline: none;
+}
+
+.lgsize-btn:hover {
+  color: #655DB3;
+}
+
+.outl-btn {
+  background: #ECF0F3;
+  outline: none;
+  border: none;
+  border: 1.5px solid #7586A3;
+  border-radius: 6px;
+  padding: .6rem 2rem;
+  font-size: .875rem;
+  font-weight: 600;
+  color: #7586A3;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.outl-btn:focus {
+  outline: none;
+}
+
+.circle-btn {
+  outline: none;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #7586A3;
+  color: #fff;
+}
+
+.circle-btn:focus {
+  outline: none;
+}
+
+.select-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #655DB3;
+  font-weight: bold;
+}
+
+.select-btn:focus {
+  outline: none;
+}
+
+.left-arrow-btn {
+  border: 1.5px solid #193566;
+  border-radius: 6px;
+  padding: .4rem .7rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #193566;
+}
+
+.left-arrow-btn:hover {
+  color: #193566;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ECF0F3;
+  font-size: .875rem;
+  font-family: 'open sans', sans-serif;
+  font-weight: 400;
+  font-weight: light;
+  color: #193566;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blur-text {
+  color: #7586A3;
+}
+
+.hr-line {
+  margin: 0;
+  border: none;
+  border-top: 1.2px solid gray;
+}
+
+.card {
+  background: #ECF0F3;
+  border: none;
+  border-radius: 14px;
+  -webkit-box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+  padding: .5rem .1rem;
+}
+
+.red-text {
+  color: #D46167;
+}
+
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+  font-family: 'Open Sans', sans-serif;
+  font-style: noraml;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.semi-small {
+  font-size: .875rem;
+}
+
+.small-font {
+  font-size: .75rem;
+}
+
+.h4-bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+/*Driver-Profile Pages Style*/
+#profile-header {
+  position: relative;
+  width: 100%;
+}
+
+#profile-header .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 138px;
+}
+
+#profile-header .profile-container .driver-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 68px;
+}
+
+#profile-header .profile-container .driver-profile .driver-img {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #D46167;
+  border-radius: 50%;
+}
+
+#profile-header .profile-container .driver-profile .driver-name {
+  margin-left: 1rem;
+  height: 51px;
+}
+
+#profile-header .profile-container .button-container {
+  border: 1.5px solid #193566;
+  border-radius: 6px;
+  background-color: #ECF0F3;
+  padding: .3rem .5rem;
+}
+
+#profile-header .profile-container .button-container .edit-profile {
+  color: #193566;
+  font-size: 1.2rem;
+}
+
+#profile-header .profile-container .button-container .edit-profile:hover {
+  color: #193566;
+}
+
+/*==============
+    Calender
+===============*/
+#work-history {
+  margin-bottom: .4rem;
+}
+
+#work-history .weekly-container {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#work-history .weekly-container .weekly {
+  min-width: 270px;
+  background-color: #fff;
+  border: 1px dashed #193566;
+  border-radius: 14px;
+  padding: 1.2rem .7rem;
+}
+
+#work-history .weekly-container .weekly .weekly-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work-history .weekly-container .weekly .weekly-header .calendar-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #193566;
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin-right: .8rem;
+}
+
+#work-history .weekly-container .weekly .week-header #header-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.2rem;
+}
+
+#work-history .weekly-container .weekly .dashed-line {
+  border-top: 1px dashed #7586A3;
+  margin-top: 1.2rem;
+  margin-bottom: .2rem;
+}
+
+#work-history .weekly-container .weekly .dashed-border {
+  border-top: 1px dashed #7586A3;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+}
+
+#work-history .weekly-container .weekly .week-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+#work-history .weekly-container .weekly #data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work-history .weekly-container .weekly #data-container .data {
+  margin-top: .5rem;
+}
+
+#work-history .weekly-container .weekly #data-container .data p {
+  margin-bottom: .57rem;
+}
+
+/*==============
+    Buttons
+===============*/
+#buttons-section {
+  position: relative;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+#buttons-section .buttons-container .lgsize-btn {
+  margin-bottom: 1.4rem;
+}
+
+#buttons-section .buttons-container .notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#buttons-section .buttons-container .notification #noti-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  width: 64px;
+  height: 64px;
+  background-color: #ECF0F3;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+}
+
+#buttons-section .buttons-container .notification #noti-btn:focus {
+  outline: none;
+}
+
+/*Dark layer*/
+#dark-layer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 22;
+  display: none;
+}
+
+/*==============
+    Chat
+===============*/
+#chat {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 33;
+  display: none;
+}
+
+#chat .chat-container {
+  position: relative;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+#chat .chat-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+#chat .chat-container #date-container {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+#chat .chat-container #message-box {
+  margin: 2rem auto;
+  overflow-y: scroll;
+  height: 200px;
+  padding-top: .5rem;
+}
+
+#chat .chat-container #message-box .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+#chat .chat-container #message-box .profile-container .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: .8rem;
+}
+
+#chat .chat-container #chat-form {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1rem;
+  left: 1rem;
+}
+
+#chat .chat-container #chat-form input {
+  position: relative;
+  width: 100%;
+  padding: .5rem;
+  padding-right: 3rem;
+  border: 1px solid #7586A3;
+  border-radius: 4px;
+  color: #193566;
+}
+
+#chat .chat-container #chat-form input:focus {
+  outline: none;
+}
+
+#chat .chat-container #chat-form button {
+  position: absolute;
+  right: .1rem;
+  bottom: .1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#chat .chat-container #chat-form button svg {
+  fill: #193566;
+  height: 30px;
+  width: 30px;
+}
+
+#chat .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem auto;
+}
+
+#chat .btn-container .close-chat {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+
+#header {
+  background-color: #193566;
+  width: 100%;
+  height: 60px;
+}
+
+#header .header-link {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+#header .header-link a {
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-right: 1.2rem;
+  padding: .5rem .7rem .1rem 0;
+}
+
+/*Main Form*/
+#main-form {
+  padding-top: 1.4rem;
+}
+
+#main-form #profile-form {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+#main-form #profile-form label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#main-form #profile-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+}
+
+#main-form #profile-form input:focus {
+  border: none;
+  outline: none;
+}
+
+#main-form #profile-form #image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#main-form #profile-form #label-image {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 22;
+}
+
+#main-form #profile-form #upload-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -2;
+}
+
+#main-form #profile-form .first-last-name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-form #profile-form .first-last-name .first-name, #main-form #profile-form .first-last-name .last-name {
+  width: 48%;
+}
+
+#main-form #profile-form .first-last-name .first-name label, #main-form #profile-form .first-last-name .last-name label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#main-form #profile-form .first-last-name .first-name input, #main-form #profile-form .first-last-name .last-name input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+}
+
+#main-form #profile-form .first-last-name .first-name input:focus, #main-form #profile-form .first-last-name .last-name input:focus {
+  border: none;
+  outline: none;
+}
+
+#main-form #profile-form .national-insurance {
+  padding-top: .8rem;
+  overflow-y: hidden;
+  height: auto;
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
+}
+
+#main-form #profile-form .national-insurance .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+#main-form #profile-form .national-insurance .text-container .btn-arrow-up {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #193566;
+  font-size: 1rem;
+}
+
+#main-form #profile-form .national-insurance .text-container .btn-arrow-up:focus {
+  outline: none;
+}
+
+#main-form #profile-form .show-national-insurance {
+  height: 60px;
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+}
+
+#main-form #profile-form .lgsize-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#orders {
+  padding-top: 1.4rem;
+  padding-bottom: 4rem;
+}
+
+#orders .order-card {
+  margin-bottom: 1.4rem;
+}
+
+#orders .order-card .card-body .midsize-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#orders .order-card .card-body .midsize-btn:hover {
+  color: #655DB3;
+}
+
+#header .links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .links-container .problem button {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: .4rem 1rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#header .links-container .problem button:focus {
+  outline: none;
+}
+
+#rota {
+  padding-top: 1.4rem;
+  padding-bottom: 4rem;
+}
+
+#rota .week-shift {
+  background-color: #fff;
+  border: 1px dashed #193566;
+  border-radius: 14px;
+  padding: 1rem .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 1.4rem;
+}
+
+#rota .week-shift .calender-icon {
+  margin-right: .8rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #193566;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+#rota .order-card {
+  margin-bottom: 1.4rem;
+}
+
+#rota .order-card .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .7rem;
+}
+
+#rota .order-card .buttons-container .midsize-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47%;
+}
+
+#rota .order-card .buttons-container .decline {
+  color: #7586A3;
+}
+
+#rota .order-card .reschedule-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#rota .order-card .reschedule-btn-container .rescdeule-btn {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: #193566;
+  background-color: transparent;
+}
+
+#rota .order-card .reschedule-btn-container .rescdeule-btn:focus {
+  outline: none;
+}
+
+/*==========
+   Decline
+============*/
+#decline {
+  background-color: #ECF0F3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 22;
+  display: none;
+}
+
+#decline .dark-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+#decline .dark-layer .decline-card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#decline .dark-layer .decline-card .decline-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#decline .dark-layer .decline-card .decline-header #close-decline {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #193566;
+}
+
+#decline .dark-layer .decline-card .decline-header #close-decline:focus {
+  outline: none;
+}
+
+#decline .dark-layer .decline-card #decline-form {
+  margin-top: 1rem;
+}
+
+#decline .dark-layer .decline-card #decline-form #reasons {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+}
+
+#decline .dark-layer .decline-card #decline-form #reasons:focus {
+  border: none;
+  outline: none;
+}
+
+#decline .dark-layer .decline-card #decline-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+  height: 6rem;
+  resize: vertical;
+}
+
+#decline .dark-layer .decline-card #decline-form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+#decline .dark-layer .decline-card #decline-form #decline-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*=================
+   Reschedule
+==================*/
+#reschedule {
+  background-color: #ECF0F3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 130vh;
+  z-index: 22;
+  display: none;
+}
+
+#reschedule .dark-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  min-height: 130vh;
+}
+
+#reschedule .dark-layer .reschedule-card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#reschedule .dark-layer .reschedule-card .reschedule-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reschedule .dark-layer .reschedule-card .reschedule-header #close-reschedule {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #193566;
+}
+
+#reschedule .dark-layer .reschedule-card .reschedule-header #close-reschedule:focus {
+  outline: none;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form {
+  margin-top: 1rem;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form .periods-container {
+  margin-top: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form .periods-container #period, #reschedule .dark-layer .reschedule-card #reschedule-form .periods-container #hours {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+  width: 48%;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form .periods-container #period:focus, #reschedule .dark-layer .reschedule-card #reschedule-form .periods-container #hours:focus {
+  border: none;
+  outline: none;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form #time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form #time-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+  width: 48%;
+  padding-right: .4rem;
+  padding-left: .6rem;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form #time-container input:focus {
+  border: none;
+  outline: none;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form #reasons {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+  margin-top: .5rem;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form #reasons:focus {
+  border: none;
+  outline: none;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  background-color: #ECF0F3;
+  color: #193566;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  margin-bottom: 1.4rem;
+  height: 6rem;
+  resize: vertical;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+#reschedule .dark-layer .reschedule-card #reschedule-form #reschedule-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#earning {
+  padding-top: 1rem;
+  /*Daily Earning*/
+  /*Daily Earnings*/
+}
+
+#earning .buttons-container {
+  border-radius: 30px;
+  -webkit-box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+          box-shadow: inset 5px 5px 6px #cbced1, inset -5px -5px 6px #ffffff;
+  padding: .7rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#earning .buttons-container .weekly-btn, #earning .buttons-container .daily-btn {
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 49%;
+  background-color: #ECF0F3;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  color: #7586A3;
+}
+
+#earning .buttons-container .active {
+  -webkit-box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
+  color: #193566;
+}
+
+#earning .weekly-earning {
+  display: block;
+}
+
+#earning .weekly-earning .small-font {
+  float: right;
+}
+
+#earning .weekly-earning .weeks-btns {
+  padding: .1rem;
+  position: relative;
+  margin-top: 1.2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#earning .weekly-earning .weeks-btns .btns-container .circle-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #7586A3;
+  font-weight: 600;
+}
+
+#earning .weekly-earning .weeks-btns .btns-container .active {
+  background-color: #193566;
+  color: #fff;
+}
+
+#earning .weekly-earning .earning-desc {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 1.2rem .7rem;
+  margin-top: 1.4rem;
+}
+
+#earning .weekly-earning .earning-desc .desc-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#earning .weekly-earning .earning-desc .dash-line {
+  border-top: 1px dashed #7586A3;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
+
+#earning .weekly-earning .earning-desc .payments, #earning .weekly-earning .earning-desc .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: .4rem;
+}
+
+#earning .weekly-earning .earning-desc .payments .green, #earning .weekly-earning .earning-desc .total .green {
+  color: #39CA6C;
+}
+
+#earning .weekly-earning .earning-desc .payments .red, #earning .weekly-earning .earning-desc .total .red {
+  color: #D46167;
+}
+
+#earning .weekly-earning .earning-desc .payments .violet, #earning .weekly-earning .earning-desc .total .violet {
+  color: #655DB3;
+}
+
+#earning .daily-earning {
+  display: none;
+}
+
+#earning .daily-earning .dates-container {
+  position: relative;
+  margin-top: .2rem;
+  padding: .1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#earning .daily-earning .dates-container .date, #earning .daily-earning .dates-container .days {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#earning .daily-earning .dates-container .date p, #earning .daily-earning .dates-container .days p {
+  font-weight: 600;
+  color: #7586A3;
+}
+
+#earning .daily-earning .dates-container .active-date {
+  background-color: #193566;
+  color: #fff;
+}
+
+#earning .daily-earning .daily-desc {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 1.2rem .7rem;
+  margin-top: 1.4rem;
+}
+
+#earning .daily-earning .daily-desc .daily-header, #earning .daily-earning .daily-desc .total-earned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: .4rem;
+}
+
+#earning .daily-earning .daily-desc .dash-line {
+  border-top: 1px dashed #7586A3;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
+/*# sourceMappingURL=app.css.map */

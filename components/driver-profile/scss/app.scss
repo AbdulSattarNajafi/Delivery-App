@@ -1,0 +1,14 @@
+@import './../../../components/sass/1-helpers/variables';
+@import './../../../components/sass/1-helpers/mixin';
+
+@import './../../../components/sass/2-tools/buttons';
+
+@import './../../../components/sass/3-basics/global';
+@import './../../../components/sass/3-basics/typegraphy';
+
+/*Driver-Profile Pages Style*/
+@import './../pages-style/driver-profile';
+@import './../pages-style/edit-profile';
+@import './../pages-style/shift-orders';
+@import './../pages-style/rota';
+@import './../pages-style/earning';

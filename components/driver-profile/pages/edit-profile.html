@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="./../../../assets/bootstrap/css/bootstrap.min.css">
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="./../../../assets/fontawesome/css/all.css">
+  <!--Custom CSS file-->
+  <link rel="stylesheet" href="./../scss/app.css">
+  <title>Edit Profile</title>
+</head>
+<body>
+  <!--Header-->
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 header-link">
+          <a href="./../driver-profile.html"><h3>
+            <i class="fas fa-arrow-left"></i>
+          </h3></i></a>
+          <h3>Edit Profile</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--===================
+  Start Of Main Form
+=====================-->
+<main id="main-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form action="#" id="profile-form">
+          <div id="image">
+            <img src="./../images/driver-img.png" class="img-fluid" alt="Profile Image">
+          </div>
+          <label for="upload-image" id="label-image"><i class="fas fa-camera"></i></label>
+          <input type="file" id="upload-image" name="image">
+          <!--First and Last Name-->
+          <div class="first-last-name">
+            <div class="first-name">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Khalik" required>
+            </div>
+            <div class="last-name">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Kasmani" required>
+            </div>
+          </div>
+          <!--End of First and Last Name-->
+          <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone" placeholder="Phone" required>
+            <label for="address">Address 1</label>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <input type="text" id="address-2" name="address-2" placeholder="Address 2">
+            <input type="text" id="locality" name="locality" placeholder="Locality" required>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            <input type="number" id="post-code" name="post-code" placeholder="Post-code" required>
+            <hr class="hr-line">
+            <!--National Insurance-->
+            <div class="national-insurance">
+              <div class="text-container">
+                <p class="semibold">National Insurance Number</p>
+                <button type="button" class="btn-arrow-up">
+                  <i class="fas fa-chevron-up"></i>
+                </button>
+              </div>
+              <!--Inputs-->
+              <label for="driving">Driving License</label>
+              <input type="text" id="driving" name="drivig" placeholder="KSMN81772711JMS" required>
+              <label for="work-id">Works ID</label>
+              <input type="number" id="work-id" name="work-id" placeholder="00012388191" required>
+              <label for="car-plate">Cars No. Plate</label>
+              <input type="text" id="car-plate" name="car-plate" placeholder="9812 881" required>
+              <label for="bank-account">Bank Account</label>
+              <input type="number" id="bank-account" name="bank-account" placeholder="01-01-2019" required>
+              <label for="join-date">Joining Date</label>
+              <input type="date" id="join-date" name="join-date" placeholder="01-12-2018" required>
+              <input type="text" placeholder="Termination Date" required>
+              <input type="text" placeholder="Returen of Termination" required>
+            </div>
+            <button type="submit" class="lgsize-btn">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<!--===================
+  Start Of Main Form
+=====================-->
+<!--JS File-->
+<script src="./../js/edit-profile.js"></script>
+</body>
+</html>

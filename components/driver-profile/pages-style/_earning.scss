@@ -1,0 +1,126 @@
+#earning{
+  padding-top: 1rem;
+  .buttons-container{
+    border-radius: 30px;
+    box-shadow: $inset-shadow;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    @include flex;
+    .weekly-btn, .daily-btn{
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      width: 49%;
+      background-color: $bg-color;
+      padding: .5rem 1rem;
+      font-weight: bold;
+      color: $muted-denim;
+    }
+    .active{
+      box-shadow: $box-shadow;
+      color: $denim-color;
+    }
+  }
+  /*Daily Earning*/
+  .weekly-earning{
+    display: block;
+    .small-font{
+      float: right;
+    }
+    .weeks-btns{
+      padding:.1rem;
+      position: relative;
+      margin-top: 1.2rem;
+      overflow: hidden;
+      display: flex;
+      .btns-container{
+        .circle-btn{
+          width: 35px;
+          height: 35px;
+          border: none;
+          outline: none;
+          border-radius: 50%;
+          background-color: transparent;
+          color: $muted-denim;
+          font-weight: 600;
+        }
+        .active{
+          background-color: $denim-color;
+          color: $white-color;
+        }
+      }
+    }
+    .earning-desc{
+      background-color: $white-color;
+      border-radius: $border-radious;
+      padding: 1.2rem .7rem;
+      margin-top: 1.4rem;
+      .desc-title{
+        @include flex;
+      }
+      .dash-line{
+        border-top: 1px dashed $muted-denim;
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+      }
+      .payments, .total{
+        @include flex;
+        align-items: flex-start;
+        margin-top: .4rem;
+        .green{
+          color: $success-color;
+        }
+        .red{
+          color: $danger-color;
+        }
+        .violet{
+          color: $violet-color;
+        }
+      }
+    }
+  }
+  /*Daily Earnings*/
+  .daily-earning{
+    display: none;
+    .dates-container{
+      position: relative;
+      margin-top: .2rem;
+      padding:.1rem;
+      display: flex;
+      overflow: hidden;
+      .date, .days{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+          font-weight: 600;
+          color: $muted-denim;
+        }
+      }
+      .active-date{
+        background-color: $denim-color;
+        color: $white-color;
+      } 
+    }
+    .daily-desc{
+      background-color: $white-color;
+      border-radius: $border-radious;
+      padding: 1.2rem .7rem;
+      margin-top: 1.4rem;
+      .daily-header, .total-earned{
+        @include flex;
+        align-items: flex-start;
+        margin-top: .4rem;
+      }
+      .dash-line{
+        border-top: 1px dashed $muted-denim;
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+      }
+    }
+  }
+}

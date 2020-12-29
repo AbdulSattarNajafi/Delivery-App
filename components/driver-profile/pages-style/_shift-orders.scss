@@ -1,0 +1,13 @@
+#orders{
+  @include main-padding;
+  padding-bottom: 4rem;
+  .order-card{
+    margin-bottom: 1.4rem;
+    .card-body .midsize-btn{
+      justify-content: center;
+      &:hover{
+        color: $violet-color;
+      }
+    }
+  }
+}
