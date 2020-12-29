@@ -1,19 +1,5 @@
 .notification-header{
-  background-color: $denim-color;
-  width: 100%;
-  height: 60px;
-  .header-link{
-    height: 60px;
-    @include vertical-align;
-    color: $white-color;
-    a{
-      border: none;
-      outline: none;
-      color: $white-color;
-      margin-right: 1.3rem;
-      padding: .5rem .7rem .1rem 0;
-    }
-  }
+  @include blue-header;
 }
 /*Main Section*/
 #notification{
@@ -109,6 +95,9 @@
       resize: vertical;
       @include input;
       border-radius: $border-radious;
+      &:placeholder{
+        color: $muted-denim;
+      }
     }
     .submit-btn{
       justify-content: center;

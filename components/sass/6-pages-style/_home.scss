@@ -59,11 +59,9 @@
     flex-flow: row nowrap;
     padding-top: .8rem;
     padding-bottom: 1rem;
-    width: 100%;
     overflow-x: hidden;
     .slider-card{
-      min-width: 84%;
-      margin-right: 1rem;
+      margin-right: .5rem;
       .card-body{
         .order-numb{
           @include flex;

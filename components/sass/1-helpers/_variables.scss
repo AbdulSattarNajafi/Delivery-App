@@ -12,8 +12,9 @@ $warning-color:#E8C016;
 
 /*Box*/
 $border-radious:14px;
-$box-shadow:     5px 5px 14px #d4d8db, 
--5px -5px 14px #ffffff;
+
+$box-shadow:5px 5px 14px #d4d8db, 
+            -5px -5px 14px #ffffff;
 
 $inset-shadow: inset 5px 5px 6px #cbced1, 
-inset -5px -5px 6px #ffffff;
+               inset -5px -5px 6px #ffffff;

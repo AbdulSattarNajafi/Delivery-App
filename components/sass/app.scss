@@ -1,5 +1,5 @@
-@import './1-helpers/variables';
 @import './1-helpers/mixin';
+@import './1-helpers/variables';
 
 @import './2-tools/buttons';
 
@@ -12,6 +12,7 @@
 @import './5-modules/notifi';
 
 @import './6-pages-style/home';
+@import './6-pages-style/login';
 @import './6-pages-style/qr';
 @import './6-pages-style/atob';
 @import './6-pages-style/nextorder';

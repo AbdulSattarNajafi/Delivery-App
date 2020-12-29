@@ -8,6 +8,7 @@
   padding: .8rem 2rem;
   width: 100%;
   font-weight: bold;
+  color: $violet-color;
   p{
     color: $violet-color;
     svg{
@@ -33,6 +34,9 @@
   color: $violet-color;
   &:focus{
     outline: none;
+  }
+  &:hover{
+    color:$violet-color;
   }
 }
 .outl-btn{
