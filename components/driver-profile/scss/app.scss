@@ -6,9 +6,14 @@
 @import './../../../components/sass/3-basics/global';
 @import './../../../components/sass/3-basics/typegraphy';
 
+@import './../../../components/sass/4-layout/header';
+
+@import './../../../components/sass/5-modules/notifi';
+
 /*Driver-Profile Pages Style*/
 @import './../pages-style/driver-profile';
 @import './../pages-style/edit-profile';
 @import './../pages-style/shift-orders';
 @import './../pages-style/rota';
 @import './../pages-style/earning';
+@import './../pages-style/shift-week';

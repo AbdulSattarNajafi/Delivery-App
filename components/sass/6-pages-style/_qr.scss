@@ -1,5 +1,6 @@
 #main{
   @include main-padding;
+  position: relative;
   .card{
     padding-bottom: 0;
     margin: 1.4rem auto;
@@ -44,7 +45,7 @@
       }
     }
     .card-footer{
-      background-color: $success-color;
+      background-color: $blue;
       width: 100%;
       border: none;
       border-radius: 0 0 $border-radious $border-radious;

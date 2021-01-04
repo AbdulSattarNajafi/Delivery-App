@@ -1,5 +1,12 @@
 #transfer-order{
   @include main-padding;
+  .heading{
+    @include vertical-align;
+    #icon{
+      margin-left: 1rem;
+      margin-bottom: -5px;
+    }
+  }
   .instruction{
     background-color: $white-color;
     padding: 1.2rem 1rem;
@@ -20,7 +27,7 @@
           width: 35px;
           height: 35px;
           border-radius: 50%;
-          background-color: $danger-color;
+          background-color: $blue;
           h4{
             color: $white-color;
             font-weight: bold;

@@ -11,8 +11,9 @@
       background-color: $bg-color;
       border-radius: 50%;
       box-shadow: $box-shadow;
-      &:first-child{
-        margin-right: 1rem;
+      margin-right: .8rem;
+      &:last-child{
+        margin-right:0;
       }
     }
   }

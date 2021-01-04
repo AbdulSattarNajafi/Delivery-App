@@ -1,11 +1,50 @@
 #allorders{
   @include main-padding;
   .res-btn{
-    button{
-      float: right;
-      width: 129px;
+    @include flex;
+    .heading{
+      @include vertical-align;
+      #icon{
+        margin-left: 1rem;
+        margin-bottom: -5px;
+      }
+    }
+    .midsize-btn{
+      width: 160px;
+      justify-content: center;
       color: $danger-color;
-      padding: .8rem 1.4rem;
+    }
+  }
+  .instructions{
+    margin-top: 1.4rem;
+    .instruction-desc{
+      border: 1px dashed $denim-color;
+      border-radius: $border-radious;
+      background-color: $white-color;
+      padding: 1rem;
+      overflow: hidden;
+      height: 60px;
+      .heading{
+        margin-bottom: .8rem;
+        @include flex;
+        #show-istructions{
+          outline: none;
+          border: none;
+          background: transparent;
+          .hide{
+            display: none;
+          }
+          .hide-icon{
+            display: none;
+          }
+          .show-icon{
+            display: block;
+          }
+        }
+      }
+    }
+    .show-instruction{
+      height: auto;
     }
   }
   .delivered{
@@ -71,7 +110,7 @@
           width: 35px;
           height: 35px;
           border-radius: 50%;
-          background-color: $secondary-color;
+          background-color: $danger-color;
           h4{
             color: $white-color;
             font-weight: bold;
@@ -101,8 +140,8 @@
         }
       }
     }
-    .gray-footer{
-      background-color: $secondary-color;
+    .red-footer{
+      background-color: $danger-color;
       @include flex;
       width: 100%;
       border: none;
@@ -126,7 +165,7 @@
           width: 35px;
           height: 35px;
           border-radius: 50%;
-          background-color: $danger-color;
+          background-color: $blue;
           h4{
             color: $white-color;
             font-weight: bold;
@@ -141,8 +180,8 @@
         fill: $muted-denim;
       }
     }
-    .red-footer{
-      background-color: $danger-color;
+    .blue-footer{
+      background-color: $blue;
       @include flex;
       width: 100%;
       border: none;

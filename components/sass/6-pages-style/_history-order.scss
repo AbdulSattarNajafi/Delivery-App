@@ -4,7 +4,7 @@
     background-color: $white-color;
     border: 1px dashed $denim-color;
     border-radius: $border-radious;
-    padding: 1.4rem 1rem;
+    padding: 1rem;
     @include vertical-align;
     .delivery-icon{
       width: 48px;
@@ -28,9 +28,23 @@
   .route-title{
     margin-top: 1.4rem;
     @include flex;
-    .semi-small{
-      color: $violet-color;
+    .route-btn{
+      min-width: 200px;
+      @include vertical-align;
+      justify-content: space-between;
+      .midsize-btn{
+        width: 110px;
+        justify-content: center;
+        font-size: 14px;
+        color: $danger-color;
+        padding: .5rem .1rem;
+        margin-right: .3rem;
+      }
+      .semi-small{
+        color: $violet-color;
+      }
     }
+    
   }
   .history-card{
     margin-top: 1.4rem;

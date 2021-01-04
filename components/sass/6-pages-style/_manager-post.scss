@@ -1,0 +1,71 @@
+#manager-post{
+  @include main-padding;
+  .delivery-container{
+    padding-bottom: 1.4rem;
+    @include flex;
+    .delivery-box{
+      @include vertical-align;
+      .delivery-icon{
+        width: 40px;
+        height: 40px;
+        background-color: $denim-color;
+        border-radius: 50%;
+        @include vertical-align;
+        justify-content: center;
+        margin-right: .6rem;
+      }
+    }
+    .semi-small{
+      color: $violet-color;
+    }
+  }
+  .heading{
+    margin-top: 1.4rem;
+    .run-5{
+      font-weight: bold;
+    }
+  }
+  /*Cards*/
+  .cards{
+    padding-bottom: 2rem;
+    .card{
+      margin-top: 1.4rem;
+      .order-numb{
+        @include flex;
+        .order-count{
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: $violet-color;
+          @include vertical-align;
+          justify-content: center;
+          p{
+            color: $white-color;
+          }
+        }
+      }
+      .card-desc{
+        @include flex;
+        .card-text p svg{
+          fill: $muted-denim;
+        }
+        .card-img{
+          width: 90px;
+          height: auto;
+          border: 5px solid $white-color;
+          border-radius: 10px;
+        }
+      }
+    }
+    .buttons{
+      @include flex;
+      width: 90%;
+      margin: auto;
+      margin-top: 1.4rem;
+      button{
+        width: 48%;
+        justify-content: center;
+      }
+    }
+  }
+}

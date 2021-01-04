@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./../../../assets/owl-carousel/owl.theme.default.min.css">
   <!--Custom CSS file-->
   <link rel="stylesheet" href="./../scss/app.css">
-  <title>Earnings</title>
+  <title>Driver app Ver 0.1</title>
 </head>
 <body>
   <!--Header-->
@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 header-link">
-          <a href="./../driver-profile.html"><h3>
+          <a href="#" onclick="history.go(-1)"><h3>
             <i class="fas fa-arrow-left"></i>
           </h3></i></a>
           <h3>Earnings</h3>
@@ -36,6 +36,9 @@
     <div class="row">
       <div class="col-12">
         <div class="buttons-container">
+          <button type="button" id="monthly" class="monthly-btn">
+            Monthly
+          </button>
           <button type="button" id="weekly" class="weekly-btn active">
             Weekly
           </button>
@@ -48,29 +51,50 @@
   Weekly Earning
 ====================================-->
       <div class="col-12 weekly-earning">
-        <h4 class="semibold text-center mt-1" id="show-date">(16th Nov - 22nd Nov)</h4>
-        <p class="small-font semibold blur-text">WEEK</p>
+        <div class="heading">
+          <h4 class="semibold mt-1" id="show-date">(16th Nov - 22nd Nov)</h4>
+          <button type="button" class="graph-btn" id="graph-btn">
+            <svg width="26" height="16.267" viewBox="0 0 26 16.267">
+              <g id="noun_growth_2500273" transform="translate(-2.4 -19.203)">
+                <g id="Group_12209" data-name="Group 12209" transform="translate(2.4 18)">
+                  <path id="Path_5462" data-name="Path 5462" d="M15.568,30.411a2.007,2.007,0,0,0,2-2,2.35,2.35,0,0,0-.109-.656L20,25.954a1.987,1.987,0,0,0,1.23.437,1.929,1.929,0,0,0,1.23-.437L25,27.759a1.879,1.879,0,0,0-.137.656,2,2,0,0,0,3.992,0,1.652,1.652,0,0,0-.137-.656l2.543-1.8a1.987,1.987,0,0,0,1.23.437,2,2,0,1,0-2-2,1.652,1.652,0,0,0,.137.656l-2.543,1.8a1.987,1.987,0,0,0-1.23-.437,1.929,1.929,0,0,0-1.23.437l-2.543-1.8a1.879,1.879,0,0,0,.137-.656,2,2,0,1,0-3.992,0,1.652,1.652,0,0,0,.137.656l-2.543,1.8a1.987,1.987,0,0,0-1.23-.437,2.007,2.007,0,0,0-2,2A1.984,1.984,0,0,0,15.568,30.411Z" transform="translate(-10.538 -21.197)" fill="#6552b9"/>
+                  <path id="Path_5463" data-name="Path 5463" d="M27.744,34.185H26.213V25.764a.548.548,0,0,0-.547-.547h-2.6a.548.548,0,0,0-.547.547v8.421H20.554v-4.4a.548.548,0,0,0-.547-.547h-2.6a.548.548,0,0,0-.547.547v4.4H14.894V25.764a.548.548,0,0,0-.547-.547h-2.6a.548.548,0,0,0-.547.547v8.421H9.235v-4.4a.548.548,0,0,0-.547-.547H6.118a.548.548,0,0,0-.547.547v4.4H3.712L2.4,34.814a.665.665,0,0,0,.656.656H27.744a.665.665,0,0,0,.656-.656A.642.642,0,0,0,27.744,34.185Z" transform="translate(-2.4 -18)" fill="#6552b9"/>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="graph-btn" id="bdefault-btn">
+            <i class="far fa-list-alt"></i>
+          </button>
+        </div>
         <div class="weeks-btns owl-carousel">
           <div class="btns-container">
+            <p class="small-font semibold blur-text">WEEK</p>
             <button type="button" class="circle-btn" data-id="40">40</button>
           </div>
           <div class="btns-container">
+            <p class="small-font semibold blur-text">WEEK</p>
             <button type="button" class="circle-btn" data-id="41">41</button>
           </div>
           <div class="btns-container">
+            <p class="small-font semibold blur-text">WEEK</p>
             <button type="button" class="circle-btn" data-id="42">42</button>
           </div>
           <div class="btns-container">
+            <p class="small-font semibold blur-text">WEEK</p>
             <button type="button" class="circle-btn" data-id="43">43</button>
           </div>
           <div class="btns-container">
-            <button type="button" class="circle-btn" data-id="44">44</button>
+            <p class="small-font semibold blur-text active-week">WEEK</p>
+            <button type="button" class="circle-btn active" data-id="44">44</button>
           </div>
           <div class="btns-container">
+            <p class="small-font semibold blur-text">WEEK</p>
             <button type="button" class="circle-btn" data-id="45">45</button>
           </div>
           <div class="btns-container">
-            <button type="button" class="circle-btn active" data-id="46">46</button>
+            <p class="small-font semibold blur-text">WEEK</p>
+            <button type="button" class="circle-btn" data-id="46">46</button>
           </div>
         </div>
         <!--Earning Description-->
@@ -110,36 +134,36 @@
   Daily Earnings
 =================================-->
       <div class="col-12 daily-earning">
-        <h4 class="semibold text-center mt-1" id="show-date">October 2020</h4>
+        <h4 class="semibold mt-1" id="show-date">October 2020</h4>
         <!--Dates-->
         <div class="dates-container owl-carousel">
           <div>
             <div class="days"><p class="small-font">F</p></div>
-            <div class="date"><p class="semi-small"></p>25</div>
+            <button class="date"><p class="semi-small"></p>25</button>
           </div>
           <div>
             <div class="days"><p class="small-font">S</p></div>
-            <div class="date"><p class="semi-small"></p>26</div>
+            <button class="date"><p class="semi-small"></p>26</button>
           </div>
           <div>
             <div class="days"><p class="small-font">S</p></div>
-            <div class="date"><p class="semi-small"></p>27</div>
+            <button class="date"><p class="semi-small"></p>27</button>
           </div>
           <div>
             <div class="days"><p class="small-font">M</p></div>
-            <div class="date active-date"><p class="semi-small"></p>28</div>
+            <button class="date active-date"><p class="semi-small"></p>28</button>
           </div>
           <div>
             <div class="days"><p class="small-font">T</p></div>
-            <div class="date"><p class="semi-small"></p>29</div>
+            <button class="date"><p class="semi-small"></p>29</button>
           </div>
           <div>
             <div class="days"><p class="small-font">W</p></div>
-            <div class="date"><p class="semi-small"></p>30</div>
+            <button class="date"><p class="semi-small"></p>30</button>
           </div>
           <div>
             <div class="days"><p class="small-font">T</p></div>
-            <div class="date"><p class="semi-small"></p>31</div>
+            <button class="date"><p class="semi-small"></p>31</button>
           </div>
         </div>
         <!--Daily Earning Descriptions-->
@@ -158,6 +182,97 @@
             <h3 class="h4-bold violet">£35</h3>
           </div>
           <p class="blur-text mb-3">* There may be deductions.</p>
+        </div>
+      </div>
+<!--===============================
+  Chart
+=================================-->
+<div class="col-12 chart-container">
+  <div class="chart">
+    <p class="small-font worked"><i class="fas fa-circle"></i> Hours worked</p>
+    <div class="bar-container">
+      <div class="ratings">
+        <p class="small-font semibold blur-text">£</p>
+        <p class="small-font semibold blur-text">60</p>
+        <p class="small-font semibold blur-text">50</p>
+        <p class="small-font semibold blur-text">40</p>
+        <p class="small-font semibold blur-text">20</p>
+        <p class="small-font semibold blur-text">10</p>
+      </div>
+      <div class="chart-lines-container">
+        <div class="chart-line">
+          <p class="red-text">2</p>
+          <div class="line second-line"></div>
+        </div>
+        <div class="chart-line">
+          <p class="red-text">6</p>
+          <div class="line"></div>
+        </div>
+        <div class="chart-line">
+          <p class="red-text">6</p>
+          <div class="line"></div>
+        </div>
+        <div class="chart-line">
+          <p class="red-text">2</p>
+          <div class="line second-line"></div>
+        </div>
+        <div class="chart-line">
+          <p class="red-text">5</p>
+          <div class="line fifth-line"></div>
+        </div>
+        <div class="chart-line">
+          <p class="red-text">3</p>
+          <div class="line third-line"></div>
+        </div>
+        <div class="chart-line">
+          <p class="red-text">4</p>
+          <div class="line fourth-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-line"></div>
+    <div class="week-days">
+      <p class="small-font">M</p>
+      <p class="small-font">T</p>
+      <p class="small-font">W</p>
+      <p class="small-font">T</p>
+      <p class="small-font">F</p>
+      <p class="small-font">S</p>
+      <p class="small-font">S</p>
+    </div>
+  </div>
+</div>
+<!--===============================
+  Summary-Payment
+=================================-->
+      <div class="col-12 sumpay-container">
+        <div class="card">
+          <div class="card-body">
+            <div class="desc">
+              <p class="blur-text">Paid</p>
+              <p>Cash / Bank</p>
+            </div>
+            <div class="desc">
+              <p class="blur-text">Bank</p>
+              <p>Free Bank</p>
+            </div>
+            <div class="desc">
+              <p class="blur-text">Code</p>
+              <p>01 - 20 -92</p>
+            </div>
+            <div class="desc">
+              <p class="blur-text">Email</p>
+              <p>myself@mail.com</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p class="h4-bold">
+              <i class="fas fa-check-circle checked"></i> Sum Paid £400
+            </p>
+            <p class="semi-small semibold blur-text">
+              <i class="fas fa-calendar-day"></i>&nbsp; 4 - 12 -20
+            </p>
+          </div>
         </div>
       </div>
     </div>

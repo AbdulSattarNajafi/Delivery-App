@@ -1,5 +1,31 @@
 #nextorder{
   @include main-padding;
+  .heading-container{
+    padding-bottom: 1rem;
+    @include flex;
+    align-items: center;
+    .tempreture{
+      display: flex;
+      .cold-container, .hot-container{
+        border-radius: 30px;
+        background-color: $white-color;
+        width: 81px;
+        height: 36px;
+        @include vertical-align;
+        justify-content: center;
+        margin-left: .4rem;
+        .cold{
+          color: $ice-color;
+        }
+        .hot{
+          color: red;
+        }
+      }
+    }
+    .semi-small{
+      color: $violet-color;
+    }
+  }
   .delivery-container{
     margin-top: 1.2rem;
     @include flex;
@@ -29,7 +55,7 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        background-color: $success-color;
+        background-color: $blue;
         h4{
           color: $white-color;
           font-weight: bold;
@@ -60,7 +86,7 @@
     }
     .card-footer{
       @include flex;
-      background-color: $success-color;
+      background-color: $blue;
       width: 100%;
       border: none;
       border-radius: 0 0 $border-radious $border-radious;

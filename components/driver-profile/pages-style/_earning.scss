@@ -6,11 +6,11 @@
     padding: .7rem;
     margin-bottom: 1rem;
     @include flex;
-    .weekly-btn, .daily-btn{
+    .monthly-btn, .weekly-btn, .daily-btn{
       border-radius: 30px;
       border: none;
       outline: none;
-      width: 49%;
+      width: 32%;
       background-color: $bg-color;
       padding: .5rem 1rem;
       font-weight: bold;
@@ -21,19 +21,41 @@
       color: $denim-color;
     }
   }
-  /*Daily Earning*/
+  /*Earnings*/
   .weekly-earning{
     display: block;
-    .small-font{
-      float: right;
+    .heading{
+      @include flex;
+      .graph-btn{
+        @include vertical-align;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        border: none;
+        outline: none;
+        background: $bg-color;
+        box-shadow: $box-shadow;
+        border-radius: $border-radious;
+        color: $violet-color;
+      }
+      #bdefault-btn{
+        display: none;
+      }
     }
     .weeks-btns{
       padding:.1rem;
       position: relative;
-      margin-top: 1.2rem;
+      margin-top: .5rem;
       overflow: hidden;
       display: flex;
       .btns-container{
+        .small-font{
+          margin-left: 3px;
+          visibility: hidden;
+        }
+        .active-week{
+          visibility: visible;
+        }
         .circle-btn{
           width: 35px;
           height: 35px;
@@ -43,6 +65,11 @@
           background-color: transparent;
           color: $muted-denim;
           font-weight: 600;
+          transition: all .4s ease;
+          &:hover{
+            background-color: $denim-color;
+            color: $white-color;
+          }
         }
         .active{
           background-color: $denim-color;
@@ -91,15 +118,23 @@
       .date, .days{
         width: 35px;
         height: 35px;
+        border: none;
+        outline: none;
         border-radius: 50%;
         background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: $muted-denim;
+        transition: all .4s ease;
         p{
           font-weight: 600;
           color: $muted-denim;
         }
+      }
+      .date:hover{
+        background-color: $denim-color;
+        color: $white-color;
       }
       .active-date{
         background-color: $denim-color;
@@ -120,6 +155,101 @@
         border-top: 1px dashed $muted-denim;
         margin-top: .8rem;
         margin-bottom: .8rem;
+      }
+    }
+  }
+  /*Chart*/
+  .chart-container{
+    display: none;
+    .chart{
+      background-color: $white-color;
+      border-radius: $border-radious;
+      padding: 1.4rem .7rem;
+      margin-top: 1.4rem;
+      .worked{
+        font-weight: bold;
+        color: $danger-color;
+        float: right;
+      }
+      .bar-container{
+        width: 100%;
+        display: flex;
+        .ratings{
+          width: 30px;
+          p{
+            margin-bottom: 1rem;
+          }
+        }
+        .chart-lines-container{
+          border-left: 1px solid $denim-color;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          width: calc(100% - 31px);
+          .chart-line{
+            display: inline-block;
+            .red-text{
+              font-size: 12px;
+              font-weight: bold;
+            }
+            .line{
+              height: 160px;
+              border-left: 9px solid $denim-color;
+              border-radius: 5px 5px 0 0;
+            }
+            .second-line{
+              height: 92px;
+            }
+            .fifth-line{
+              height: 125px;
+            }
+            .third-line{
+              height: 102px;
+            }
+            .fourth-line{
+              height: 112px;
+            }
+          }
+        }
+      }
+      .bottom-line{
+        border-top: 1px solid $denim-color;
+      }
+      .week-days{
+        margin-left: 30px;
+        border-left: 1px solid $denim-color;
+        display: flex;
+        justify-content: space-around;
+        p{
+          font-weight: 600;
+          color: $secondary-color;
+          margin-top: 10px;
+          margin-left: -4px;
+        }
+      }
+    }
+  }
+  /*Summary Payment*/
+  .sumpay-container{
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+    .card{
+      padding-bottom: 0;
+      .desc{
+        @include flex;
+        margin-bottom: .6rem;
+      }
+      .card-footer{
+        @include flex;
+        background: $bg-color;
+        border-radius: 0 0 $border-radious $border-radious;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        .checked{
+          color: $success-color;
+          font-size: 20px;
+          margin-right: 5px;
+        }
       }
     }
   }

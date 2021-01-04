@@ -1,0 +1,71 @@
+#monies{
+  @include main-padding;
+  .heading{
+    @include flex;
+    margin-bottom: .5rem;
+    .order-id{
+      display: flex;
+      .order-numb{
+        margin-right: .8rem;
+      }
+    }
+  }
+  /*Cards*/
+  .cards-container{
+    margin-bottom: 1.4rem;
+    .card{
+      padding-bottom: 0;
+      margin-top: 1.2rem;
+      .run-container{
+        width: 68px;
+        height: 24px;
+        background: $white-color;
+        border-radius: 30px;
+        @include vertical-align;
+        justify-content: center;
+      }
+      .delivery-container{
+        @include flex;
+        margin-top: 1.4rem;
+        margin-bottom: .3rem;
+        p .denim{
+          color: $denim-color;
+          margin-left: .5rem;
+        }
+      }
+      .card-footer{
+        background: transparent;
+        border-top: 1px solid $secondary-color;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        p .checked{
+          color: $success-color;
+          margin-right: .2rem;
+        }
+      }
+    }
+  }
+  /*Total*/
+  .total{
+    background: $white-color;
+    border: 1px dashed $denim-color;
+    border-radius: $border-radious;
+    padding: 1rem;
+    margin-top: .8rem;
+    .float{
+      @include flex;
+      margin-bottom: 1rem;
+    }
+    .pay-shop{
+      @include flex;
+      p{
+        color: $danger-color;
+      }
+    }
+  }
+  .summary{
+    margin: 1.4rem 0;
+    @include flex;
+    justify-content: space-between;
+  }
+}

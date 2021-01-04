@@ -1,42 +1,13 @@
-#profile-header{
-  position: relative;
-  width: 100%;
-  .profile-container{
-    @include header;
-    .driver-profile{
-      @include vertical-align;
-      height: 68px;
-      .driver-img{
-        width: 64px;
-        height: 64px;
-        border: 2px solid $danger-color;
-        border-radius: 50%;
-      }
-      .driver-name{
-        margin-left: 1rem;
-        height: 51px;
-      }
-    }
-    .button-container{
-      border: 1.5px solid $denim-color;
-      border-radius: 6px;
-      background-color: $bg-color;
-      padding: .3rem .5rem;
-      .edit-profile{
-        color: $denim-color;
-        font-size: 1.2rem;
-        &:hover{
-          color: $denim-color;
-        }
-      }
-    }
-  }
-}
 /*==============
     Calender
 ===============*/
 #work-history{
   margin-bottom: .4rem;
+  .h4-bold{
+    color: $violet-color;
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .weekly-container{
     overflow-x: hidden;
     display: flex;
@@ -87,9 +58,9 @@
       #data-container{
         @include flex;
         .data{
-          margin-top: .5rem;
+          margin-top: .7rem;
           p{
-            margin-bottom: .57rem;
+            margin-bottom: .71rem;
           }
         }
       }
@@ -102,28 +73,11 @@
 #buttons-section{
   position: relative;
   @include main-padding;
-  padding-bottom: 1.4rem;
   .buttons-container{
     .lgsize-btn{
       margin-bottom: 1.4rem;
-    }
-    .notification{
-      display: flex;
-      justify-content: center;
-      #noti-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        border: none;
-        width: 64px;
-        height: 64px;
-        background-color: $bg-color;
-        border-radius: 50%;
-        box-shadow: $box-shadow;
-        &:focus{
-          outline: none;
-        }
+      &:last-child{
+        margin-bottom: .4rem;
       }
     }
   }
@@ -235,5 +189,40 @@
       border-radius: 50%;
       font-size: 1.4rem;
     }
+  }
+}
+/*Message Button*/
+#notifi .notifi-container .notification{
+  display: flex;
+  justify-content: center;
+  #noti-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin-right: .8rem;
+    background-color: $bg-color;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+#notifi .notifi-container .notifica{
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 374px) {
+  #notifi .notifi-container .notifica{
+    width: 50px;
+    height: 50px;
+  }
+  #notifi .notifi-container .notification #noti-btn{
+    width: 50px;
+    height: 50px;
   }
 }
