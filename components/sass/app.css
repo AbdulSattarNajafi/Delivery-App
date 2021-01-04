@@ -3691,6 +3691,8 @@ footer .footer-container .active svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #monies .summary {
