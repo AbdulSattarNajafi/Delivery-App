@@ -9,7 +9,7 @@ $('.owl-carousel').owlCarousel({
 
 const preloader = document.querySelector('.preloader-container'); 
   window.addEventListener('load', function() {
-    setInterval(loader, 0);
+    setInterval(loader, 3000);
     function loader() {
       preloader.style.display = 'none';
       clearInterval();

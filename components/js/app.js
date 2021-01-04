@@ -1,8 +1,10 @@
+let height = document.documentElement.getBoundingClientRect().height;
+
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 menuBtn.addEventListener('click', function() {
-  menu.classList.add('show-menu');
-  menu.style.height = '1027px';
+  menu.classList.toggle('show-menu');
+  menu.style.height = `${height}px`;
 });
 
 function closeMenu() {
@@ -20,7 +22,7 @@ linkBtns.forEach((linkBtn) => {
     currentContainer.classList.toggle('show-links');
   })
 });
-//Preloader
+
 function instruction() {
   const instructionContainer = document.querySelector('.instruction-desc');
   const upBtn = document.querySelector('.hide');
