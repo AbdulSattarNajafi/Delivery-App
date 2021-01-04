@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .8rem 2rem;
+  padding: .8rem 1.5rem;
   width: 100%;
   font-weight: bold;
   color: #655DB3;
@@ -50,7 +50,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   width: 100%;
   font-size: 1rem;
   font-weight: bold;
@@ -3580,6 +3580,7 @@ footer .footer-container .active svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
   margin-bottom: .5rem;
 }
 
@@ -3686,6 +3687,12 @@ footer .footer-container .active svg {
   color: #D46167;
 }
 
+#monies .sum-container .lgsize-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #monies .summary {
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -3698,5 +3705,11 @@ footer .footer-container .active svg {
       -ms-flex-align: center;
           align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 374px) {
+  #monies .heading .h4-bold {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

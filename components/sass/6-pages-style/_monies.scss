@@ -2,6 +2,7 @@
   @include main-padding;
   .heading{
     @include flex;
+    align-items: center;
     margin-bottom: .5rem;
     .order-id{
       display: flex;
@@ -63,9 +64,19 @@
       }
     }
   }
+  .sum-container .lgsize-btn{
+    justify-content: center;
+  }
   .summary{
     margin: 1.4rem 0;
     @include flex;
     justify-content: space-between;
+  }
+}
+@media (max-width: 374px) {
+  #monies .heading{
+    .h4-bold{
+      font-size: 1rem;
+    }
   }
 }
