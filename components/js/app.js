@@ -9,7 +9,7 @@ menuBtn.addEventListener('click', function() {
 
 function closeMenu() {
   menu.classList.remove('show-menu');
-  menu.style.height = '100%';
+  menu.style.minHeight = '100%';
 };
 
 //Menu links
