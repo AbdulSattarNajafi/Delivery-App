@@ -134,6 +134,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   background-color: #ECF0F3;
   font-size: 1rem;
   font-family: 'open sans', sans-serif;
@@ -278,7 +279,7 @@ h5 {
 
 #head .menu {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   left: -100%;
