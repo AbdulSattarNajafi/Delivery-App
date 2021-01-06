@@ -13,12 +13,15 @@
         height: 36px;
         @include vertical-align;
         justify-content: center;
-        margin-left: .4rem;
+        margin-left: .7rem;
         .cold{
           color: $ice-color;
         }
         .hot{
-          color: red;
+          color: $red-color;
+          svg{
+            margin-top: -4px;
+          }
         }
       }
     }
@@ -156,6 +159,12 @@
     margin: 1.4rem auto;
     box-shadow: none;
     .card-body{
+      .client-name{
+        margin-top: .5rem;
+        svg{
+          fill: $muted-denim;
+        }
+      }
       .client-ad{
         @include flex;
         svg{
@@ -218,6 +227,18 @@
       background-color: $bg-color;
       border-radius: 50%;
       font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  #nextorder .heading-container .tempreture {
+    h2{
+      font-size: 1.2rem;
+    }
+    .cold-container, .hot-container{
+      width: 71px;
+      height: 28px;
     }
   }
 }

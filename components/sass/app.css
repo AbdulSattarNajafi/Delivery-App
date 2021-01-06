@@ -279,15 +279,13 @@ a {
 #head .menu {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  left: 0;
+  left: -100%;
   top: 0;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
-  z-index: 44;
-  -webkit-transition: all .7s ease-out;
-  transition: all .7s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  z-index: 45;
 }
 
 #head .menu #close-menu {
@@ -406,8 +404,7 @@ a {
 }
 
 #head .show-menu {
-  -webkit-transform: translate(0%);
-          transform: translate(0%);
+  left: 0%;
 }
 
 footer {
@@ -787,8 +784,9 @@ footer .footer-container .active svg {
 .direct-orders .slider-container .slider-card .card-body .order-numb .order-count {
   width: 35px;
   height: 35px;
+  border: 1px solid black;
   border-radius: 50%;
-  background-color: #655DB3;
+  background-color: #ECF0F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,7 +799,7 @@ footer .footer-container .active svg {
 }
 
 .direct-orders .slider-container .slider-card .card-body .order-numb .order-count p {
-  color: #fff;
+  color: black;
 }
 
 .direct-orders .slider-container .slider-card .card-body .blur-text {
@@ -1247,6 +1245,7 @@ footer .footer-container .active svg {
 #manager-post {
   padding-top: 1.4rem;
   /*Cards*/
+  /*Modal*/
 }
 
 #manager-post .delivery-container {
@@ -1323,8 +1322,9 @@ footer .footer-container .active svg {
 #manager-post .cards .card .order-numb .order-count {
   width: 35px;
   height: 35px;
+  border: 1px solid black;
   border-radius: 50%;
-  background-color: #655DB3;
+  background-color: #ECF0F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,7 +1337,7 @@ footer .footer-container .active svg {
 }
 
 #manager-post .cards .card .order-numb .order-count p {
-  color: #fff;
+  color: black;
 }
 
 #manager-post .cards .card .card-desc {
@@ -1383,6 +1383,44 @@ footer .footer-container .active svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#manager-post .modal .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#manager-post .modal .modal-content .modal-body h3 {
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+#manager-post .modal .modal-content .modal-footer {
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#manager-post .modal .modal-content .modal-footer button {
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .4rem;
+}
+
+#manager-post .modal .modal-content .modal-footer .cancel-btn {
+  color: black;
+}
+
+#manager-post .modal .modal-content .modal-footer .ok-btn {
+  background-color: #39CA6C;
+  color: #fff;
 }
 
 #atob {
@@ -1573,7 +1611,7 @@ footer .footer-container .active svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: .4rem;
+  margin-left: .7rem;
 }
 
 #nextorder .heading-container .tempreture .cold-container .cold, #nextorder .heading-container .tempreture .hot-container .cold {
@@ -1581,7 +1619,11 @@ footer .footer-container .active svg {
 }
 
 #nextorder .heading-container .tempreture .cold-container .hot, #nextorder .heading-container .tempreture .hot-container .hot {
-  color: red;
+  color: #C43434;
+}
+
+#nextorder .heading-container .tempreture .cold-container .hot svg, #nextorder .heading-container .tempreture .hot-container .hot svg {
+  margin-top: -4px;
 }
 
 #nextorder .heading-container .semi-small {
@@ -1828,6 +1870,14 @@ footer .footer-container .active svg {
           box-shadow: none;
 }
 
+.qr-modal .modal-card .card-body .client-name {
+  margin-top: .5rem;
+}
+
+.qr-modal .modal-card .card-body .client-name svg {
+  fill: #7586A3;
+}
+
 .qr-modal .modal-card .card-body .client-ad {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1943,6 +1993,16 @@ footer .footer-container .active svg {
   font-size: 20px;
 }
 
+@media (max-width: 374px) {
+  #nextorder .heading-container .tempreture h2 {
+    font-size: 1.2rem;
+  }
+  #nextorder .heading-container .tempreture .cold-container, #nextorder .heading-container .tempreture .hot-container {
+    width: 71px;
+    height: 28px;
+  }
+}
+
 #allorders {
   padding-top: 1.4rem;
   /*Cancelled Delivery Card*/
@@ -1972,7 +2032,6 @@ footer .footer-container .active svg {
 
 #allorders .res-btn .heading #icon {
   margin-left: 1rem;
-  margin-bottom: -5px;
 }
 
 #allorders .res-btn .midsize-btn {
@@ -2313,6 +2372,7 @@ footer .footer-container .active svg {
 #transfer-order {
   padding-top: 1.4rem;
   /*Transfer cards*/
+  /*Modal*/
 }
 
 #transfer-order .heading {
@@ -2326,7 +2386,6 @@ footer .footer-container .active svg {
 
 #transfer-order .heading #icon {
   margin-left: 1rem;
-  margin-bottom: -5px;
 }
 
 #transfer-order .instruction {
@@ -2533,6 +2592,30 @@ footer .footer-container .active svg {
   left: 0;
   right: 0;
   z-index: 122;
+}
+
+#transfer-order .modal .modal-dialog .modal-footer {
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#transfer-order .modal .modal-dialog .modal-footer button {
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .4rem;
+}
+
+#transfer-order .modal .modal-dialog .modal-footer .cancel-btn {
+  color: black;
+}
+
+#transfer-order .modal .modal-dialog .modal-footer .yes-btn {
+  background-color: #39CA6C;
+  color: #fff;
 }
 
 #receipt-detail {
@@ -3361,7 +3444,7 @@ footer .footer-container .active svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: red;
+  color: #C43434;
 }
 
 #delivery-boxes .onboards .temp .temp-body .card .hr-line {

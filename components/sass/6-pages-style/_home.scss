@@ -145,12 +145,13 @@
           .order-count{
             width: 35px;
             height: 35px;
+            border: 1px solid black;
             border-radius: 50%;
-            background-color: $violet-color;
+            background-color: $bg-color;
             @include vertical-align;
             justify-content: center;
             p{
-              color: $white-color;
+              color: black;
             }
           }
         }

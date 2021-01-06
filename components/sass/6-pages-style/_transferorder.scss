@@ -4,7 +4,6 @@
     @include vertical-align;
     #icon{
       margin-left: 1rem;
-      margin-bottom: -5px;
     }
   }
   .instruction{
@@ -146,5 +145,22 @@
     left: 0;
     right: 0;
     z-index: 122;
+  }
+  /*Modal*/
+  .modal .modal-dialog .modal-footer{
+    border: none;
+    justify-content: center;
+    button{
+      width: 30%;
+      justify-content: center;
+      padding: .4rem;
+    }
+    .cancel-btn{
+      color: black;
+    }
+    .yes-btn{
+      background-color: $success-color;
+      color: $white-color;
+    }
   }
 }

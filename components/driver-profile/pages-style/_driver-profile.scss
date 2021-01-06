@@ -2,69 +2,153 @@
     Calender
 ===============*/
 #work-history{
+  @include main-padding;
   margin-bottom: .4rem;
-  .h4-bold{
-    color: $violet-color;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .weekly-container{
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: row nowrap;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    .weekly{
-      min-width: 270px;
-      background-color: $white-color;
-      border: 1px dashed $denim-color;
-      border-radius: $border-radious;
-      padding: 1.2rem .7rem;
-      .weekly-header{
-        @include vertical-align;
-        .calendar-icon{
-          width: 48px;
-          height: 48px;
-          background-color: $denim-color;
-          border-radius: 50%;
-          color: $white-color;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.5rem;
-          margin-right: .8rem;
+  .current-week{
+    .next-week-btn{
+      float: right;
+      color: $violet-color;
+      outline: none;
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: transparent;
+    }
+    .weekly-container{
+      width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      padding-top: 1.4rem;
+      padding-bottom: 1rem;
+      .weekly{
+        min-width: 100%;
+        background-color: $white-color;
+        border: 1px dashed $denim-color;
+        border-radius: $border-radious;
+        padding: 1.2rem .7rem;
+        .weekly-header{
+          @include vertical-align;
+          .calendar-icon{
+            width: 48px;
+            height: 48px;
+            background-color: $denim-color;
+            border-radius: 50%;
+            color: $white-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-right: .8rem;
+          }
         }
-      }
-      .week-header{
-        #header-data{
-          @include flex;
+        .week-header{
+          #header-data{
+            @include flex;
+            margin-top: 1.2rem;
+          }
+        }
+        .dashed-line{
+          border-top: 1px dashed $muted-denim;
           margin-top: 1.2rem;
+          margin-bottom: .2rem;
         }
-      }
-      .dashed-line{
-        border-top: 1px dashed $muted-denim;
-        margin-top: 1.2rem;
-        margin-bottom: .2rem;
-      }
-      .dashed-border{
-        border-top: 1px dashed $muted-denim;
-        margin-top: .2rem;
-        margin-bottom: .2rem;
-      }
-      .week-data{
-        @include flex;
-        margin-top: 1rem;
-      }
-      #data-container{
-        @include flex;
-        .data{
-          margin-top: .7rem;
-          p{
-            margin-bottom: .71rem;
+        .dashed-border{
+          border-top: 1px dashed $muted-denim;
+          margin-top: .2rem;
+          margin-bottom: .2rem;
+        }
+        .week-data{
+          @include flex;
+          margin-top: 1rem;
+        }
+        #data-container{
+          @include flex;
+          .data{
+            margin-top: .7rem;
+            p{
+              margin-bottom: .71rem;
+            }
           }
         }
       }
     }
+  }
+  .hide-current-week{
+    display: none;
+  }
+  /*Next Week Shift*/
+  .shift-week{
+    display: none;
+    .left-arrow-btn{
+      &:focus{
+        outline: none;
+      }
+    }
+    .pagination-container{
+      @include flex;
+      margin-top: 1.4rem;
+      .pagination{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        .pagi-link{
+          width: 40px;
+          height: 40px;
+          border: 1px solid $muted-denim;
+          border-radius: 50%;
+          background-color: transparent;
+          @include vertical-align;
+          justify-content: center;
+          margin-left: .4rem;
+          transition: all .4s ease-in;
+          a{
+            font-size: 14px;
+            font-weight: 600;
+            color: $muted-denim;
+          }
+          &:hover{
+            background-color: $denim-color;
+            border-color: $denim-color;
+            a{
+              color: $white-color;
+            }
+          }
+        }
+        .active{
+          background-color: $denim-color;
+          border-color: $denim-color;
+          a{
+            color: $white-color;
+          }
+        }
+      }
+    }
+    /*Week Summary*/
+    .week-summary{
+      margin-bottom: 1rem;
+      .summary{
+        @include flex;
+        p{
+          color: black;
+        }
+        .date{
+          display: flex;
+          p{
+            margin-right: 1rem;
+            color: black;
+          }
+        }
+      }
+      .underline{
+        border: none;
+        height: 0;
+        border-top: 1.2px solid $secondary-color;
+      }
+    }
+  }
+  .show-shift-week{
+    display: block;
   }
 }
 /*==============

@@ -279,15 +279,13 @@ h5 {
 #head .menu {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  left: 0;
+  left: -100%;
   top: 0;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
-  z-index: 44;
-  -webkit-transition: all .7s ease-out;
-  transition: all .7s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  z-index: 45;
 }
 
 #head .menu #close-menu {
@@ -406,8 +404,7 @@ h5 {
 }
 
 #head .show-menu {
-  -webkit-transform: translate(0%);
-          transform: translate(0%);
+  left: 0%;
 }
 
 #notifi {
@@ -460,42 +457,40 @@ h5 {
     Calender
 ===============*/
 #work-history {
+  padding-top: 1.4rem;
   margin-bottom: .4rem;
+  /*Next Week Shift*/
 }
 
-#work-history .h4-bold {
+#work-history .current-week .next-week-btn {
+  float: right;
   color: #655DB3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: transparent;
 }
 
-#work-history .weekly-container {
+#work-history .current-week .weekly-container {
+  width: 100%;
   overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  padding-top: 1rem;
+  padding-top: 1.4rem;
   padding-bottom: 1rem;
 }
 
-#work-history .weekly-container .weekly {
-  min-width: 270px;
+#work-history .current-week .weekly-container .weekly {
+  min-width: 100%;
   background-color: #fff;
   border: 1px dashed #193566;
   border-radius: 14px;
   padding: 1.2rem .7rem;
 }
 
-#work-history .weekly-container .weekly .weekly-header {
+#work-history .current-week .weekly-container .weekly .weekly-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,7 +499,7 @@ h5 {
           align-items: center;
 }
 
-#work-history .weekly-container .weekly .weekly-header .calendar-icon {
+#work-history .current-week .weekly-container .weekly .weekly-header .calendar-icon {
   width: 48px;
   height: 48px;
   background-color: #193566;
@@ -523,7 +518,7 @@ h5 {
   margin-right: .8rem;
 }
 
-#work-history .weekly-container .weekly .week-header #header-data {
+#work-history .current-week .weekly-container .weekly .week-header #header-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,19 +531,19 @@ h5 {
   margin-top: 1.2rem;
 }
 
-#work-history .weekly-container .weekly .dashed-line {
+#work-history .current-week .weekly-container .weekly .dashed-line {
   border-top: 1px dashed #7586A3;
   margin-top: 1.2rem;
   margin-bottom: .2rem;
 }
 
-#work-history .weekly-container .weekly .dashed-border {
+#work-history .current-week .weekly-container .weekly .dashed-border {
   border-top: 1px dashed #7586A3;
   margin-top: .2rem;
   margin-bottom: .2rem;
 }
 
-#work-history .weekly-container .weekly .week-data {
+#work-history .current-week .weekly-container .weekly .week-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,7 +556,7 @@ h5 {
   margin-top: 1rem;
 }
 
-#work-history .weekly-container .weekly #data-container {
+#work-history .current-week .weekly-container .weekly #data-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,12 +568,132 @@ h5 {
           align-items: center;
 }
 
-#work-history .weekly-container .weekly #data-container .data {
+#work-history .current-week .weekly-container .weekly #data-container .data {
   margin-top: .7rem;
 }
 
-#work-history .weekly-container .weekly #data-container .data p {
+#work-history .current-week .weekly-container .weekly #data-container .data p {
   margin-bottom: .71rem;
+}
+
+#work-history .hide-current-week {
+  display: none;
+}
+
+#work-history .shift-week {
+  display: none;
+  /*Week Summary*/
+}
+
+#work-history .shift-week .left-arrow-btn:focus {
+  outline: none;
+}
+
+#work-history .shift-week .pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.4rem;
+}
+
+#work-history .shift-week .pagination-container .pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#work-history .shift-week .pagination-container .pagination .pagi-link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #7586A3;
+  border-radius: 50%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: .4rem;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+#work-history .shift-week .pagination-container .pagination .pagi-link a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7586A3;
+}
+
+#work-history .shift-week .pagination-container .pagination .pagi-link:hover {
+  background-color: #193566;
+  border-color: #193566;
+}
+
+#work-history .shift-week .pagination-container .pagination .pagi-link:hover a {
+  color: #fff;
+}
+
+#work-history .shift-week .pagination-container .pagination .active {
+  background-color: #193566;
+  border-color: #193566;
+}
+
+#work-history .shift-week .pagination-container .pagination .active a {
+  color: #fff;
+}
+
+#work-history .shift-week .week-summary {
+  margin-bottom: 1rem;
+}
+
+#work-history .shift-week .week-summary .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work-history .shift-week .week-summary .summary p {
+  color: black;
+}
+
+#work-history .shift-week .week-summary .summary .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#work-history .shift-week .week-summary .summary .date p {
+  margin-right: 1rem;
+  color: black;
+}
+
+#work-history .shift-week .week-summary .underline {
+  border: none;
+  height: 0;
+  border-top: 1.2px solid #7C7C7E;
+}
+
+#work-history .show-shift-week {
+  display: block;
 }
 
 /*==============
@@ -1405,6 +1520,140 @@ h5 {
           justify-content: center;
 }
 
+/*==============
+    Chat
+===============*/
+#chat {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 33;
+  display: none;
+}
+
+#chat .chat-container {
+  position: relative;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+#chat .chat-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+#chat .chat-container #date-container {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+#chat .chat-container #message-box {
+  margin: 2rem auto;
+  overflow-y: scroll;
+  height: 200px;
+  padding-top: .5rem;
+}
+
+#chat .chat-container #message-box .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+#chat .chat-container #message-box .profile-container .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: .8rem;
+}
+
+#chat .chat-container #chat-form {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1rem;
+  left: 1rem;
+}
+
+#chat .chat-container #chat-form input {
+  position: relative;
+  width: 100%;
+  padding: .5rem;
+  padding-right: 3rem;
+  border: 1px solid #7586A3;
+  border-radius: 4px;
+  color: #193566;
+}
+
+#chat .chat-container #chat-form input:focus {
+  outline: none;
+}
+
+#chat .chat-container #chat-form button {
+  position: absolute;
+  right: .1rem;
+  bottom: .1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#chat .chat-container #chat-form button svg {
+  fill: #193566;
+  height: 30px;
+  width: 30px;
+}
+
+#chat .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem auto;
+}
+
+#chat .btn-container .close-chat {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+
 #earning {
   padding-top: 1rem;
   /*Earnings*/
@@ -1434,7 +1683,7 @@ h5 {
   border-radius: 30px;
   border: none;
   outline: none;
-  width: 32%;
+  width: 48%;
   background-color: #ECF0F3;
   padding: .5rem 1rem;
   font-weight: bold;
@@ -1801,164 +2050,5 @@ h5 {
   color: #39CA6C;
   font-size: 20px;
   margin-right: 5px;
-}
-
-#shift-week {
-  padding-top: 1.4rem;
-  /*Week Summary*/
-}
-
-#shift-week .pagination-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1.4rem;
-}
-
-#shift-week .pagination-container .pagination {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#shift-week .pagination-container .pagination .pagi-link {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #7586A3;
-  border-radius: 50%;
-  background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: .4rem;
-  -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
-}
-
-#shift-week .pagination-container .pagination .pagi-link a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #7586A3;
-}
-
-#shift-week .pagination-container .pagination .pagi-link:hover {
-  background-color: #193566;
-  border-color: #193566;
-}
-
-#shift-week .pagination-container .pagination .pagi-link:hover a {
-  color: #fff;
-}
-
-#shift-week .pagination-container .pagination .active {
-  background-color: #193566;
-  border-color: #193566;
-}
-
-#shift-week .pagination-container .pagination .active a {
-  color: #fff;
-}
-
-#shift-week .week-summary {
-  margin-bottom: 1rem;
-}
-
-#shift-week .week-summary .summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#shift-week .week-summary .summary p {
-  color: black;
-}
-
-#shift-week .week-summary .summary .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#shift-week .week-summary .summary .date p {
-  margin-right: 1rem;
-  color: black;
-}
-
-#shift-week .week-summary .underline {
-  border: none;
-  height: 0;
-  border-top: 1.2px solid #7C7C7E;
-}
-
-/*Message Button*/
-#notifi .notifi-container .notification {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#notifi .notifi-container .notification #noti-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  outline: none;
-  border: none;
-  width: 60px;
-  height: 60px;
-  margin-right: .8rem;
-  background-color: #ECF0F3;
-  border-radius: 50%;
-  -webkit-box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
-          box-shadow: 5px 5px 14px #d4d8db, -5px -5px 14px #ffffff;
-}
-
-#notifi .notifi-container .notification #noti-btn:focus {
-  outline: none;
-}
-
-#notifi .notifi-container .notifica {
-  width: 60px;
-  height: 60px;
-}
-
-@media (max-width: 374px) {
-  #notifi .notifi-container .notifica {
-    width: 50px;
-    height: 50px;
-  }
-  #notifi .notifi-container .notification #noti-btn {
-    width: 50px;
-    height: 50px;
-  }
 }
 /*# sourceMappingURL=app.css.map */

@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./../../assets/fontawesome/css/all.css">
   <!--Owl-Carousel-->
   <link rel="stylesheet" href="./../../assets/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="./../../assets/owl-carousel/owl.theme.default.min.css">
   <!--Custom CSS file-->
   <link rel="stylesheet" href="./scss/app.css">
   <title>Driver app Ver 2.1</title>
@@ -37,6 +36,7 @@
       </div>
     </div>
   </div>
+<div class="container"><hr class="hr-line"></div>
 <!--========== Menu =============-->
   <div class="menu">
     <button type="button" id="close-menu" onclick="closeMenu()">
@@ -132,11 +132,11 @@
             </button>
           </div>
           <ul class="list-of-links">
-            <li><a href="./pages/shift-order.html">Shift Rota</a></li>
-            <li><a href="./pages/earning.html">Earning</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="./pages/edit-profile.html">Edit Profile</a></li>
-            <li><a href="#">Tutorial use app</a></li>
+            <li><a href="./pages/shift-order.html">Shift Rota</a></li>
+            <li><a href="./pages/earning.html">Earnings</a></li>
+            <li><a href="#">Tutorial</a></li>
           </ul>
         </li>
         <li class="menu-links"><a href="./../../login.html">
@@ -156,10 +156,13 @@
 =================-->
 <main id="work-history">
   <div class="container">
-    <a href="pages/shift-week.html" class="h4-bold">Shift</a>
     <div class="row">
-      <div class="col-12 weekly-container owl-carousel">
-        <!--Weekly-1-->
+      <div class="col-12 current-week">
+        <button type="button" class="next-week-btn" onclick="nextWeek()">
+          Next Week Shift
+        </button>
+        <div class="weekly-container owl-carousel">
+          <!--Weekly-1-->
         <div class="weekly">
           <div class="weekly-header">
             <div class="calendar-icon">
@@ -283,7 +286,103 @@
           </div>
   <!--========End Of Week Data=======-->
         </div>
+        </div>
       </div>
+  <!--======Start Of Next Week Shift=========-->
+      <div class="col-12 shift-week">
+          <button type="button" class="left-arrow-btn" onclick="currentWeek()">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+        <div class="pagination-container">
+          <h3>Shift Week</h3>
+            <ul class="pagination">
+              <li class="pagi-link active"><a href="#">01</a></li>
+              <li class="pagi-link"><a href="#">02</a></li>
+              <li class="pagi-link"><a href="#">03</a></li>
+              <li class="pagi-link"><a href="#">04</a></li>
+            </ul>
+          </div>
+          <div class="col-12 week-summary">
+            <hr class="underline">
+          <!--Summy-1-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">14 -12-2020</p>
+              <p class="semi-small">Mon</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">5 Hours</p>
+          </div>
+          <hr class="underline">
+          <!--Summy-2-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">15 -12-2020</p>
+              <p class="semi-small">Tue</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">4 Hours</p>
+          </div>
+          <hr class="underline">
+          <!--Summy-3-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">16 -12-2020</p>
+              <p class="semi-small">Wed</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">5 Hours</p>
+          </div>
+          <hr class="underline">
+          <!--Summy-4-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">17 -12-2020</p>
+              <p class="semi-small">Thu</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">3 Hours</p>
+          </div>
+          <hr class="underline">
+          <!--Summy-5-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">18 -12-2020</p>
+              <p class="semi-small">Fri</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">1 Hours</p>
+          </div>
+          <hr class="underline">
+          <!--Summy-6-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">19 -12-2020</p>
+              <p class="semi-small">Sat</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">5 Hours</p>
+          </div>
+          <hr class="underline">
+          <!--Summy-7-->
+          <div class="summary">
+            <div class="date">
+              <p class="semi-small">20 -12-2020</p>
+              <p class="semi-small">Sun</p>
+              <p class="semi-small">11:00</p>
+              <p class="semi-small">16:00</p>
+            </div>
+            <p class="semi-small">4 Hours</p>
+          </div>
+        </div>
+      </div>
+  <!--======End Of Next Week Shift=========-->
     </div>
   </div>
 </main>

@@ -73,7 +73,7 @@
           padding: .3rem .6rem 1.4rem .6rem;
           .hot{
             @include vertical-align;
-            color: red;
+            color: $red-color;
           }
           .hr-line{
             margin: 1.4rem 0;
@@ -83,7 +83,6 @@
           }
         }
       }
-
     }
   }
 }

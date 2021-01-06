@@ -130,11 +130,11 @@
             </button>
           </div>
           <ul class="list-of-links">
-            <li><a href="./../../components/driver-profile/pages/shift-order.html">Shift Rota</a></li>
-            <li><a href="./../../components/driver-profile/pages/earning.html">Earning</a></li>
             <li><a href="./../../components/driver-profile/driver-profile.html">Profile</a></li>
             <li><a href="./../../components/driver-profile/pages/edit-profile.html">Edit Profile</a></li>
-            <li><a href="#">Tutorial use app</a></li>
+            <li><a href="./../../components/driver-profile/pages/shift-order.html">Shift Rota</a></li>
+            <li><a href="./../../components/driver-profile/pages/earning.html">Earnings</a></li>
+            <li><a href="#">Tutorial</a></li>
           </ul>
         </li>
         <li class="menu-links"><a href="./../../login.html">
@@ -172,7 +172,7 @@
                 </g>
               </svg>
             </div>
-            <h3 class="h4-bold mt-1">Next Run</h3>
+            <h3 class="h4-bold mt-1">Next Run 5</h3>
           </div>
           <div><p class="semi-small h4-bold">
             SOT <apan>18:45</apan>
@@ -192,7 +192,7 @@
         <div class="card">
           <div class="card-body">
             <div class="order-numb">
-              <div><h4 id="customer-name">Hayden Dannis</h4></div>
+              <div><h4 id="customer-name">Hayden Dannis/Box[8]</h4></div>
               <div class="order-count"><p class="order-counter semibold">01</p></div>
             </div>
             <div class="card-desc mt-2">
@@ -217,7 +217,7 @@
         <div class="card">
           <div class="card-body">
             <div class="order-numb">
-              <div><h4 id="customer-name">Hayden Dannis</h4></div>
+              <div><h4 id="customer-name">Hayden Dannis/Box[9]</h4></div>
               <div class="order-count"><p class="order-counter semibold">02</p></div>
             </div>
             <div class="card-desc mt-2">
@@ -242,7 +242,7 @@
         <div class="card">
           <div class="card-body">
             <div class="order-numb">
-              <div><h4 id="customer-name">Hayden Dannis</h4></div>
+              <div><h4 id="customer-name">Hayden Dannis/Box[10]</h4></div>
               <div class="order-count"><p class="order-counter semibold">03</p></div>
             </div>
             <div class="card-desc mt-2">
@@ -267,10 +267,27 @@
           <button type="button" class="midsize-btn blur-text" onclick="history.go(-1)">
             Cancel
           </button>
-          <button type="button" class="midsize-btn">Save</button>
+          <button type="button" class="midsize-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Save
+          </button>
         </div>
       </div>
       <!--End Of Cards=-->
+      <!--Start Of Modal-->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h3 class="text-center">Driver Check Best Route</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="midsize-btn cancel-btn" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="midsize-btn ok-btn">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--End Of Modal-->
     </div>
   </div>
 </main>
@@ -278,6 +295,7 @@
   End of Main
 ===============-->
   <!--Bootstrap JS-file-->
+  <script src="./../../assets/jQuery/jquery.js"></script>
   <script src="./../../assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="./../js/app.js"></script>
 </body>

@@ -35,12 +35,13 @@
         .order-count{
           width: 35px;
           height: 35px;
+          border: 1px solid black;
           border-radius: 50%;
-          background-color: $violet-color;
+          background-color: $bg-color;
           @include vertical-align;
           justify-content: center;
           p{
-            color: $white-color;
+            color: black;
           }
         }
       }
@@ -65,6 +66,33 @@
       button{
         width: 48%;
         justify-content: center;
+      }
+    }
+  }
+  /*Modal*/
+  .modal .modal-content{
+    .modal-body{
+      display: flex;
+      justify-content: center;
+      h3{
+        letter-spacing: 1px;
+        font-weight: 800;
+      }
+    }
+    .modal-footer{
+      border: none;
+      justify-content: center;
+      button{
+        width: 30%;
+        justify-content: center;
+        padding: .4rem;
+      }
+      .cancel-btn{
+        color: black;
+      }
+      .ok-btn{
+        background-color: $success-color;
+        color: $white-color;
       }
     }
   }

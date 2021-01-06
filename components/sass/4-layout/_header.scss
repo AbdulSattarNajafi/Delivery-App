@@ -36,13 +36,12 @@
   .menu{
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    left: 0;
+    left: -100%;
     top: 0;
-    transform: translate(-100%);
-    z-index: 44;
-    transition: all .7s ease-out;
+    transition: all .5s ease-out;
+    z-index: 45;
     #close-menu{
       outline: none;
       border: none;
@@ -130,6 +129,6 @@
     }
   }
   .show-menu{
-    transform: translate(0%);
+    left: 0%;
   }
 }
