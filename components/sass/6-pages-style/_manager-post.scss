@@ -82,17 +82,18 @@
     .modal-footer{
       border: none;
       justify-content: center;
-      button{
+      .cancel-btn{
+        color: black;
         width: 30%;
         justify-content: center;
         padding: .4rem;
       }
-      .cancel-btn{
-        color: black;
-      }
       .ok-btn{
         background-color: $success-color;
         color: $white-color;
+        width: 30%;
+        justify-content: center;
+        padding: .4rem;
       }
     }
   }

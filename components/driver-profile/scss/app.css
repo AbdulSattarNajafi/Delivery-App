@@ -1699,6 +1699,9 @@ h5 {
 
 #earning .weekly-earning {
   display: block;
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #earning .weekly-earning .heading {
@@ -1835,6 +1838,8 @@ h5 {
 
 #earning .daily-earning {
   display: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #earning .daily-earning .dates-container {

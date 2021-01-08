@@ -24,6 +24,8 @@
   /*Earnings*/
   .weekly-earning{
     display: block;
+    opacity: 1;
+    transition: all .5s ease;
     .heading{
       @include flex;
       .graph-btn{
@@ -109,6 +111,7 @@
   /*Daily Earnings*/
   .daily-earning{
     display: none;
+    transition: all .5s ease;
     .dates-container{
       position: relative;
       margin-top: .2rem;

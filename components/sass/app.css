@@ -1402,7 +1402,8 @@ footer .footer-container .active svg {
           justify-content: center;
 }
 
-#manager-post .modal .modal-content .modal-footer button {
+#manager-post .modal .modal-content .modal-footer .cancel-btn {
+  color: black;
   width: 30%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1410,13 +1411,14 @@ footer .footer-container .active svg {
   padding: .4rem;
 }
 
-#manager-post .modal .modal-content .modal-footer .cancel-btn {
-  color: black;
-}
-
 #manager-post .modal .modal-content .modal-footer .ok-btn {
   background-color: #39CA6C;
   color: #fff;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .4rem;
 }
 
 #atob {
