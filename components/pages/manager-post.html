@@ -20,11 +20,15 @@
     <div class="row">
       <div class="col-lg-12 header">
         <div class="driver-profile">
+          <div id="logo-text">
+            <h4 class="h4-bold semi-small">Spoon</h4>
+            <p class="small-font">Tracker</p>
+          </div>
           <div class="driver-img">
             <img src="./../images/driver-img.png" class="img-fluid" alt="driver photo">
           </div>
           <div class="driver-name">
-            <p class="driver-numb blur-text">Driver 1</p>
+            <p class="driver-numb blur-text" id="user-identity">Driver 1</p>
             <h3 id="driver-name">Adam Sandler</h3>
           </div>
         </div>
@@ -152,143 +156,327 @@
 <!--=============
   Start of Main
 ===============-->
-<main id="manager-post">
+<main id="slider-container">
+  <div class="slider" ontouchmove='swipe(event)'>
+    <section id="manager-post" class="manager-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="delivery-container">
+              <div class="delivery-box">
+                <div class="delivery-icon">
+                  <svg id="moped-24px" width="28" height="28" viewBox="0 0 28 28">
+                    <g id="Group_12036" data-name="Group 12036">
+                      <rect id="Rectangle_3908" data-name="Rectangle 3908" width="28" height="28" fill="none"/>
+                    </g>
+                    <g id="Group_12038" data-name="Group 12038" transform="translate(2.333 5.833)">
+                      <g id="Group_12037" data-name="Group 12037">
+                        <path id="Path_5393" data-name="Path 5393" d="M21.833,7.333A2.34,2.34,0,0,0,19.5,5H16V7.333h3.5v3.092L15.44,15.5H11.333V9.667H6.667A4.665,4.665,0,0,0,2,14.333v3.5H4.333a3.5,3.5,0,1,0,7,0H16.56l5.273-6.592ZM7.833,19a1.17,1.17,0,0,1-1.167-1.167H9A1.17,1.17,0,0,1,7.833,19Z" transform="translate(-2 -5)" fill="#fff"/>
+                        <rect id="Rectangle_3909" data-name="Rectangle 3909" width="5.833" height="2.333" transform="translate(3.5 1.167)" fill="#fff"/>
+                        <path id="Path_5394" data-name="Path 5394" d="M19.5,13A3.5,3.5,0,1,0,23,16.5,3.5,3.5,0,0,0,19.5,13Zm0,4.667A1.167,1.167,0,1,1,20.667,16.5,1.17,1.17,0,0,1,19.5,17.667Z" transform="translate(0.333 -3.667)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="h4-bold mt-1">Next Run 5</h3>
+              </div>
+              <div><p class="semi-small h4-bold">
+                SOT <apan>18:45</apan>
+              </p></div>
+            </div>
+            <hr class="hr-line">
+          </div>
+          <div class="col-12 heading">
+            <p class="run-5 mb-1">Run 5</p>
+            <p class="semi-small mb-3">Number of Deliveries: 3</p>
+            <p class="semi-small semibold blur-text">Messages:</p>
+            <p class="semi-small">This is example message lorem ipsum that amre indo seleb girl aweu.</p>
+          </div>
+          <!--Cards-->
+          <div class="col-12 cards">
+            <!--Card-1-->
+            <div class="card">
+              <div class="card-body">
+                <div class="order-numb">
+                  <div><h4 id="customer-name">Hayden Dannis/Box[8]</h4></div>
+                  <div class="order-count"><p class="order-counter semibold">01</p></div>
+                </div>
+                <div class="card-desc mt-2">
+                  <div class="card-text">
+                    <p class="semi-small blur-text mt-2">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M200 224h-49.46a266.476 266.476 0 0 0 23.497-23.75C201.489 168.679 216 135.397 216 104a88 88 0 0 0-176 0c0 31.396 14.51 64.679 41.963 96.25A266.476 266.476 0 0 0 105.46 224H56a8 8 0 0 0 0 16h144a8 8 0 0 0 0-16zM128 72a32 32 0 1 1-32 32a32 32 0 0 1 32-32z"/></svg>&nbsp;
+                      92 Onroad Sip, PORT CLANCE</p>
+                    <p class="semi-small blur-text">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/></svg>&nbsp;
+                       +44 7425 170134</p>
+                    <p class="semi-small blur-text semibold mb-2">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(410deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"><path d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"/></svg>&nbsp;&nbsp;
+                      TS2 UUS</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="./../images/qr-code.png" class="img-fluid" alt="QR Code image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Card-2-->
+            <div class="card">
+              <div class="card-body">
+                <div class="order-numb">
+                  <div><h4 id="customer-name">Hayden Dannis/Box[9]</h4></div>
+                  <div class="order-count"><p class="order-counter semibold">02</p></div>
+                </div>
+                <div class="card-desc mt-2">
+                  <div class="card-text">
+                    <p class="semi-small blur-text mt-2">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M200 224h-49.46a266.476 266.476 0 0 0 23.497-23.75C201.489 168.679 216 135.397 216 104a88 88 0 0 0-176 0c0 31.396 14.51 64.679 41.963 96.25A266.476 266.476 0 0 0 105.46 224H56a8 8 0 0 0 0 16h144a8 8 0 0 0 0-16zM128 72a32 32 0 1 1-32 32a32 32 0 0 1 32-32z"/></svg>&nbsp;
+                      92 Onroad Sip, PORT CLANCE</p>
+                    <p class="semi-small blur-text">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/></svg>&nbsp;
+                       +44 7425 170134</p>
+                    <p class="semi-small blur-text semibold mb-2">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(410deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"><path d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"/></svg>&nbsp;&nbsp;
+                      TS2 UUS</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="./../images/qr-code.png" class="img-fluid" alt="QR Code image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Card-3-->
+            <div class="card">
+              <div class="card-body">
+                <div class="order-numb">
+                  <div><h4 id="customer-name">Hayden Dannis/Box[10]</h4></div>
+                  <div class="order-count"><p class="order-counter semibold">03</p></div>
+                </div>
+                <div class="card-desc mt-2">
+                  <div class="card-text">
+                    <p class="semi-small blur-text mt-2">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M200 224h-49.46a266.476 266.476 0 0 0 23.497-23.75C201.489 168.679 216 135.397 216 104a88 88 0 0 0-176 0c0 31.396 14.51 64.679 41.963 96.25A266.476 266.476 0 0 0 105.46 224H56a8 8 0 0 0 0 16h144a8 8 0 0 0 0-16zM128 72a32 32 0 1 1-32 32a32 32 0 0 1 32-32z"/></svg>&nbsp;
+                      92 Onroad Sip, PORT CLANCE</p>
+                    <p class="semi-small blur-text">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/></svg>&nbsp;
+                       +44 7425 170134</p>
+                    <p class="semi-small blur-text semibold mb-2">
+                      <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(410deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"><path d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"/></svg>&nbsp;&nbsp;
+                      TS2 UUS</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="./../images/qr-code.png" class="img-fluid" alt="QR Code image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="midsize-btn blur-text" onclick="history.go(-1)">
+                Cancel
+              </button>
+              <button type="button" class="midsize-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Save
+              </button>
+            </div>
+          </div>
+          <!--End Of Cards=-->
+          <!--Start Of Modal-->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h3 class="text-center">Driver Check Best Route</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="midsize-btn cancel-btn" data-bs-dismiss="modal">Cancel</button>
+                  <a href="./allorders.html" class="midsize-btn ok-btn">OK</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--End Of Modal-->
+        </div>
+      </div>
+    </section>
+<!--=======================
+  End Of Manager Post Page
+=========================-->
+<!--============================
+  Start Of Calling Drivers Page
+==============================-->
+    <section id="calling-drivers" class="manager-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="delivery-container">
+              <div class="delivery-box">
+                <div class="delivery-icon">
+                  <svg id="moped-24px" width="28" height="28" viewBox="0 0 28 28">
+                    <g id="Group_12036" data-name="Group 12036">
+                      <rect id="Rectangle_3908" data-name="Rectangle 3908" width="28" height="28" fill="none"/>
+                    </g>
+                    <g id="Group_12038" data-name="Group 12038" transform="translate(2.333 5.833)">
+                      <g id="Group_12037" data-name="Group 12037">
+                        <path id="Path_5393" data-name="Path 5393" d="M21.833,7.333A2.34,2.34,0,0,0,19.5,5H16V7.333h3.5v3.092L15.44,15.5H11.333V9.667H6.667A4.665,4.665,0,0,0,2,14.333v3.5H4.333a3.5,3.5,0,1,0,7,0H16.56l5.273-6.592ZM7.833,19a1.17,1.17,0,0,1-1.167-1.167H9A1.17,1.17,0,0,1,7.833,19Z" transform="translate(-2 -5)" fill="#fff"/>
+                        <rect id="Rectangle_3909" data-name="Rectangle 3909" width="5.833" height="2.333" transform="translate(3.5 1.167)" fill="#fff"/>
+                        <path id="Path_5394" data-name="Path 5394" d="M19.5,13A3.5,3.5,0,1,0,23,16.5,3.5,3.5,0,0,0,19.5,13Zm0,4.667A1.167,1.167,0,1,1,20.667,16.5,1.17,1.17,0,0,1,19.5,17.667Z" transform="translate(0.333 -3.667)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="h4-bold mt-1">5 Shifts Available</h3>
+              </div>
+            </div>
+            <hr class="hr-line">
+          </div>
+          <div class="col-12 heading">
+            <h3 class="blur-text">Messages:</h3>
+            <p class="semibold mt-2">This is example message lorem ipsum that amre indo seleb girl aweu.</p>
+          </div>
+          <!--Cards-->
+          <div class="col-12 cards">
+            <!--Card-1-->
+            <div class="card manager-cards">
+              <div class="card-body">
+                <div class="date mb-2">
+                  <p class="h4-bold">12-03-21</p>
+                  <p class="h4-bold day">Friday</p>
+                </div>
+                <div class="shifts-container mb-2">
+                  <div class="shifts">
+                    <p class="h4-bold mb-2">Shift&nbsp; DT2 & DT3</p>
+                    <p class="h4-bold mb-2">Time&nbsp; 11:00 &nbsp;&nbsp; 18:00</p>
+                    <p class="h4-bold">7 Hrs</p>
+                  </div>
+                  <div class="approved">
+                    <img src="./../images/approved.png" alt="Approved Image">
+                  </div>
+                </div>
+                <p class="h4-bold text-center">Accepted by: <span class="violet">Simon</span></p>
+              </div>
+            </div>
+            <!--Card-2-->
+            <div class="card manager-cards">
+              <div class="card-body">
+                <div class="date mb-2">
+                  <p class="h4-bold">12-03-21</p>
+                  <p class="h4-bold day">Friday</p>
+                </div>
+                <div class="shifts-container mb-2">
+                  <div class="shifts">
+                    <p class="h4-bold mb-2">Shift&nbsp; DT2 & DT3</p>
+                    <p class="h4-bold mb-2">Time&nbsp; 11:00 &nbsp;&nbsp; 18:00</p>
+                    <p class="h4-bold">7 Hrs</p>
+                  </div>
+                  <div class="approved">
+                    <img src="./../images/approved.png" alt="Approved Image">
+                  </div>
+                </div>
+                <p class="h4-bold text-center">Accepted by: <span class="violet">Simon</span></p>
+              </div>
+            </div>
+            <!--Card-3-->
+            <div class="card manager-cards">
+              <div class="card-body">
+                <div class="date mb-2">
+                  <p class="h4-bold">12-03-21</p>
+                  <p class="h4-bold day">Friday</p>
+                </div>
+                <div class="shifts-container mb-2">
+                  <div class="shifts">
+                    <p class="h4-bold mb-2">Shift&nbsp; DT2 & DT3</p>
+                    <p class="h4-bold mb-2">Time&nbsp; 11:00 &nbsp;&nbsp; 18:00</p>
+                    <p class="h4-bold">7 Hrs</p>
+                  </div>
+                  <div class="approved">
+                  </div>
+                </div>
+                <p class="h4-bold text-center">Accepted by: <span class="violet">Simon</span></p>
+              </div>
+            </div>
+            <!--Buttons-->
+            <div class="buttons">
+              <button type="button" class="midsize-btn dismiss">
+                Dismiss
+              </button>
+              <button type="button" class="midsize-btn manager" onclick="openChat()">
+                Manager
+              </button>
+            </div>
+          </div>
+          <!--End Of Cards=-->
+        </div>
+      </div>
+    <div id="dark-layer"></div>
+<!--===============
+  Start Of Chat
+=================-->
+<div id="chat">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="delivery-container">
-          <div class="delivery-box">
-            <div class="delivery-icon">
-              <svg id="moped-24px" width="28" height="28" viewBox="0 0 28 28">
-                <g id="Group_12036" data-name="Group 12036">
-                  <rect id="Rectangle_3908" data-name="Rectangle 3908" width="28" height="28" fill="none"/>
-                </g>
-                <g id="Group_12038" data-name="Group 12038" transform="translate(2.333 5.833)">
-                  <g id="Group_12037" data-name="Group 12037">
-                    <path id="Path_5393" data-name="Path 5393" d="M21.833,7.333A2.34,2.34,0,0,0,19.5,5H16V7.333h3.5v3.092L15.44,15.5H11.333V9.667H6.667A4.665,4.665,0,0,0,2,14.333v3.5H4.333a3.5,3.5,0,1,0,7,0H16.56l5.273-6.592ZM7.833,19a1.17,1.17,0,0,1-1.167-1.167H9A1.17,1.17,0,0,1,7.833,19Z" transform="translate(-2 -5)" fill="#fff"/>
-                    <rect id="Rectangle_3909" data-name="Rectangle 3909" width="5.833" height="2.333" transform="translate(3.5 1.167)" fill="#fff"/>
-                    <path id="Path_5394" data-name="Path 5394" d="M19.5,13A3.5,3.5,0,1,0,23,16.5,3.5,3.5,0,0,0,19.5,13Zm0,4.667A1.167,1.167,0,1,1,20.667,16.5,1.17,1.17,0,0,1,19.5,17.667Z" transform="translate(0.333 -3.667)" fill="#fff"/>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <h3 class="h4-bold mt-1">Next Run 5</h3>
+        <div class="chat-container">
+          <div id="date-container">
+            <p class="small-font blur-text" id="date">Mon, 16 Nov 2020</p>
           </div>
-          <div><p class="semi-small h4-bold">
-            SOT <apan>18:45</apan>
-          </p></div>
-        </div>
-        <hr class="hr-line">
-      </div>
-      <div class="col-12 heading">
-        <p class="run-5 mb-1">Run 5</p>
-        <p class="semi-small mb-3">Number of Deliveries: 3</p>
-        <p class="semi-small semibold blur-text">Messages:</p>
-        <p class="semi-small">This is example message lorem ipsum that amre indo seleb girl aweu.</p>
-      </div>
-      <!--Cards-->
-      <div class="col-12 cards">
-        <!--Card-1-->
-        <div class="card">
-          <div class="card-body">
-            <div class="order-numb">
-              <div><h4 id="customer-name">Hayden Dannis/Box[8]</h4></div>
-              <div class="order-count"><p class="order-counter semibold">01</p></div>
-            </div>
-            <div class="card-desc mt-2">
-              <div class="card-text">
-                <p class="semi-small blur-text mt-2">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M200 224h-49.46a266.476 266.476 0 0 0 23.497-23.75C201.489 168.679 216 135.397 216 104a88 88 0 0 0-176 0c0 31.396 14.51 64.679 41.963 96.25A266.476 266.476 0 0 0 105.46 224H56a8 8 0 0 0 0 16h144a8 8 0 0 0 0-16zM128 72a32 32 0 1 1-32 32a32 32 0 0 1 32-32z"/></svg>&nbsp;
-                  92 Onroad Sip, PORT CLANCE</p>
-                <p class="semi-small blur-text">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/></svg>&nbsp;
-                   +44 7425 170134</p>
-                <p class="semi-small blur-text semibold mb-2">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(410deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"><path d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"/></svg>&nbsp;&nbsp;
-                  TS2 UUS</p>
+          <!--Message Box-->
+          <div id="message-box">
+            <!--Message-1-->
+            <div class="profile-container">
+              <div class="img">
+                <img src="./../driver-profile/images/d-profile.png" alt="Driver Image" class="img-fluid">
               </div>
-              <div class="card-img">
-                <img src="./../images/qr-code.png" class="img-fluid" alt="QR Code image">
+              <div>
+                <p class="semibold">Driver Name</p>
+                <p class="small-font blur-text">50 minute ago</p>
+                <p id="message-tex" class="mt-2">am i working tomorrow?</p>
+              </div>
+            </div>
+            <!--Message-2-->
+            <div class="profile-container">
+              <div class="img">
+                <img src="./../driver-profile/images/d-profile.png" alt="Driver Image" class="img-fluid">
+              </div>
+              <div>
+                <p class="semibold">Manager Name</p>
+                <p class="small-font blur-text">10 minute ago</p>
+                <p id="message-tex" class="mt-2">Yes you are</p>
+              </div>
+            </div>
+            <!--Message-3-->
+            <div class="profile-container">
+              <div class="img">
+                <img src="./../driver-profile/images/d-profile.png" alt="Driver Image" class="img-fluid">
+              </div>
+              <div>
+                <p class="semibold">Driver Name</p>
+                <p class="small-font blur-text">1 minute ago</p>
+                <p id="message-tex" class="mt-2">Okay, thank you</p>
               </div>
             </div>
           </div>
+          <!--End of Message Box-->
+          <!--chat form-->
+          <form action="#" id="chat-form">
+            <input type="text" placeholder="Add Message">
+            <button type="button">
+              <svg aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2l-15 2v7z"/></svg>
+            </button>
+          </form>
+          <!--End of chat form-->
         </div>
-        <!--Card-2-->
-        <div class="card">
-          <div class="card-body">
-            <div class="order-numb">
-              <div><h4 id="customer-name">Hayden Dannis/Box[9]</h4></div>
-              <div class="order-count"><p class="order-counter semibold">02</p></div>
-            </div>
-            <div class="card-desc mt-2">
-              <div class="card-text">
-                <p class="semi-small blur-text mt-2">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M200 224h-49.46a266.476 266.476 0 0 0 23.497-23.75C201.489 168.679 216 135.397 216 104a88 88 0 0 0-176 0c0 31.396 14.51 64.679 41.963 96.25A266.476 266.476 0 0 0 105.46 224H56a8 8 0 0 0 0 16h144a8 8 0 0 0 0-16zM128 72a32 32 0 1 1-32 32a32 32 0 0 1 32-32z"/></svg>&nbsp;
-                  92 Onroad Sip, PORT CLANCE</p>
-                <p class="semi-small blur-text">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/></svg>&nbsp;
-                   +44 7425 170134</p>
-                <p class="semi-small blur-text semibold mb-2">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(410deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"><path d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"/></svg>&nbsp;&nbsp;
-                  TS2 UUS</p>
-              </div>
-              <div class="card-img">
-                <img src="./../images/qr-code.png" class="img-fluid" alt="QR Code image">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Card-3-->
-        <div class="card">
-          <div class="card-body">
-            <div class="order-numb">
-              <div><h4 id="customer-name">Hayden Dannis/Box[10]</h4></div>
-              <div class="order-count"><p class="order-counter semibold">03</p></div>
-            </div>
-            <div class="card-desc mt-2">
-              <div class="card-text">
-                <p class="semi-small blur-text mt-2">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M200 224h-49.46a266.476 266.476 0 0 0 23.497-23.75C201.489 168.679 216 135.397 216 104a88 88 0 0 0-176 0c0 31.396 14.51 64.679 41.963 96.25A266.476 266.476 0 0 0 105.46 224H56a8 8 0 0 0 0 16h144a8 8 0 0 0 0-16zM128 72a32 32 0 1 1-32 32a32 32 0 0 1 32-32z"/></svg>&nbsp;
-                  92 Onroad Sip, PORT CLANCE</p>
-                <p class="semi-small blur-text">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97v-5.51z"/></svg>&nbsp;
-                   +44 7425 170134</p>
-                <p class="semi-small blur-text semibold mb-2">
-                  <svg aria-hidden="true" focusable="false" width="20px" height="30px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(410deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"><path d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"/></svg>&nbsp;&nbsp;
-                  TS2 UUS</p>
-              </div>
-              <div class="card-img">
-                <img src="./../images/qr-code.png" class="img-fluid" alt="QR Code image">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="buttons">
-          <button type="button" class="midsize-btn blur-text" onclick="history.go(-1)">
-            Cancel
-          </button>
-          <button type="button" class="midsize-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Save
+        <div class="btn-container">
+          <button type="button" class="close-chat" onclick="closeChat()">
+            <i class="fas fa-times"></i>
           </button>
         </div>
       </div>
-      <!--End Of Cards=-->
-      <!--Start Of Modal-->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <h3 class="text-center">Driver Check Best Route</h3>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="midsize-btn cancel-btn" data-bs-dismiss="modal">Cancel</button>
-              <a href="./allorders.html" class="midsize-btn ok-btn">OK</a>
-            </div>
-          </div>
-        </div>
-      </div>
-  <!--End Of Modal-->
     </div>
+  </div>
+</div>
+<!--===============
+  End Of Chat
+=================-->
+    </section>
   </div>
 </main>
 <!--=============
@@ -298,5 +486,6 @@
   <script src="./../../assets/jQuery/jquery.js"></script>
   <script src="./../../assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="./../js/app.js"></script>
+  <script src="./../js/managerpost.js"></script>
 </body>
 </html>

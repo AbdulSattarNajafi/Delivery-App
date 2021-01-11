@@ -1238,8 +1238,53 @@ footer .footer-container .active svg {
   font-weight: bold;
 }
 
+#slider-container .slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+#slider-container .slider .manager-1 {
+  min-width: 100%;
+}
+
+#slider-container .slider .manager-2 {
+  min-width: 100%;
+}
+
+/*Driver profile*/
+#head .driver-profile #logo-text {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #655DB3;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+#head .driver-profile #logo-text h4 {
+  margin-bottom: 3px;
+}
+
+/*Manager Post*/
 #manager-post {
   padding-top: 1.4rem;
+  width: 100%;
   /*Cards*/
   /*Modal*/
 }
@@ -1419,6 +1464,270 @@ footer .footer-container .active svg {
       -ms-flex-pack: center;
           justify-content: center;
   padding: .4rem;
+}
+
+/*Calling Drivers*/
+#calling-drivers {
+  padding-top: 1.4rem;
+  width: 100%;
+  /*Cards*/
+  /*Dark layer*/
+  /*==============
+    Chat
+  ===============*/
+}
+
+#calling-drivers .delivery-container {
+  padding-bottom: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#calling-drivers .delivery-container .delivery-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#calling-drivers .delivery-container .delivery-box .delivery-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #193566;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: .6rem;
+}
+
+#calling-drivers .heading {
+  margin-top: 1.4rem;
+}
+
+#calling-drivers .cards {
+  padding-bottom: 2rem;
+}
+
+#calling-drivers .cards .manager-cards {
+  margin-top: 1.4rem;
+}
+
+#calling-drivers .cards .manager-cards .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#calling-drivers .cards .manager-cards .date .day {
+  margin-left: 3rem;
+}
+
+#calling-drivers .cards .manager-cards .shifts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#calling-drivers .cards .manager-cards .shifts-container .approved {
+  width: 40%;
+}
+
+#calling-drivers .cards .manager-cards .violet {
+  color: #655DB3;
+}
+
+#calling-drivers .cards .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 1.4rem;
+}
+
+#calling-drivers .cards .buttons button {
+  width: 48%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#calling-drivers .cards .buttons .dismiss {
+  color: #193566;
+}
+
+#calling-drivers .cards .buttons .manager {
+  color: #655DB3;
+}
+
+#calling-drivers #dark-layer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 22;
+  display: none;
+}
+
+#calling-drivers #chat {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 33;
+  display: none;
+}
+
+#calling-drivers #chat .chat-container {
+  position: relative;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+#calling-drivers #chat .chat-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+#calling-drivers #chat .chat-container #date-container {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+#calling-drivers #chat .chat-container #message-box {
+  margin: 2rem auto;
+  overflow-y: scroll;
+  height: 200px;
+  padding-top: .5rem;
+}
+
+#calling-drivers #chat .chat-container #message-box .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+#calling-drivers #chat .chat-container #message-box .profile-container .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: .8rem;
+}
+
+#calling-drivers #chat .chat-container #chat-form {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1rem;
+  left: 1rem;
+}
+
+#calling-drivers #chat .chat-container #chat-form input {
+  position: relative;
+  width: 100%;
+  padding: .5rem;
+  padding-right: 3rem;
+  border: 1px solid #7586A3;
+  border-radius: 4px;
+  color: #193566;
+}
+
+#calling-drivers #chat .chat-container #chat-form input:focus {
+  outline: none;
+}
+
+#calling-drivers #chat .chat-container #chat-form button {
+  position: absolute;
+  right: .1rem;
+  bottom: .1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#calling-drivers #chat .chat-container #chat-form button svg {
+  fill: #193566;
+  height: 30px;
+  width: 30px;
+}
+
+#calling-drivers #chat .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem auto;
+}
+
+#calling-drivers #chat .btn-container .close-chat {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 1.4rem;
 }
 
 #atob {
